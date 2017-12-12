@@ -1,0 +1,292 @@
+{
+  "29659": [
+    {
+      "typeId": 17769,
+      "name": "Fluxed Condensates",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "29660": [
+    {
+      "typeId": 16646,
+      "name": "Mercury",
+      "quantity": 173,
+      "volume": 0.8,
+      "grpId": 427,
+      "iconId": 2573
+    },
+    {
+      "typeId": 16668,
+      "name": "Dysporite",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "29661": [
+    {
+      "typeId": 16646,
+      "name": "Mercury",
+      "quantity": 173,
+      "volume": 0.8,
+      "grpId": 427,
+      "iconId": 2573
+    },
+    {
+      "typeId": 16667,
+      "name": "Neo Mercurite",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "29662": [
+    {
+      "typeId": 16643,
+      "name": "Cadmium",
+      "quantity": 173,
+      "volume": 0.4,
+      "grpId": 427,
+      "iconId": 2567
+    },
+    {
+      "typeId": 17960,
+      "name": "Prometium",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "29663": [
+    {
+      "typeId": 16648,
+      "name": "Hafnium",
+      "quantity": 173,
+      "volume": 0.8,
+      "grpId": 427,
+      "iconId": 2572
+    },
+    {
+      "typeId": 16669,
+      "name": "Ferrofluid",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "29664": [
+    {
+      "typeId": 16642,
+      "name": "Vanadium",
+      "quantity": 173,
+      "volume": 1,
+      "grpId": 427,
+      "iconId": 2581
+    },
+    {
+      "typeId": 16666,
+      "name": "Hyperflurite",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32821": [
+    {
+      "typeId": 16642,
+      "name": "Vanadium",
+      "quantity": 164,
+      "volume": 1,
+      "grpId": 427,
+      "iconId": 2581
+    },
+    {
+      "typeId": 17959,
+      "name": "Vanadium Hafnite",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32822": [
+    {
+      "typeId": 16644,
+      "name": "Platinum",
+      "quantity": 164,
+      "volume": 1,
+      "grpId": 427,
+      "iconId": 2575
+    },
+    {
+      "typeId": 16662,
+      "name": "Platinum Technite",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32823": [
+    {
+      "typeId": 16641,
+      "name": "Chromium",
+      "quantity": 164,
+      "volume": 0.6,
+      "grpId": 427,
+      "iconId": 2569
+    },
+    {
+      "typeId": 16664,
+      "name": "Solerium",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32824": [
+    {
+      "typeId": 16643,
+      "name": "Cadmium",
+      "quantity": 164,
+      "volume": 0.4,
+      "grpId": 427,
+      "iconId": 2567
+    },
+    {
+      "typeId": 16663,
+      "name": "Caesarium Cadmide",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32825": [
+    {
+      "typeId": 16665,
+      "name": "Hexite",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32826": [
+    {
+      "typeId": 16637,
+      "name": "Tungsten",
+      "quantity": 164,
+      "volume": 0.4,
+      "grpId": 427,
+      "iconId": 2580
+    },
+    {
+      "typeId": 16657,
+      "name": "Rolled Tungsten Alloy",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32827": [
+    {
+      "typeId": 16638,
+      "name": "Titanium",
+      "quantity": 164,
+      "volume": 0.4,
+      "grpId": 427,
+      "iconId": 2582
+    },
+    {
+      "typeId": 16654,
+      "name": "Titanium Chromide",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32828": [
+    {
+      "typeId": 16639,
+      "name": "Scandium",
+      "quantity": 164,
+      "volume": 0.4,
+      "grpId": 427,
+      "iconId": 2577
+    },
+    {
+      "typeId": 16656,
+      "name": "Fernite Alloy",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "32829": [
+    {
+      "typeId": 16640,
+      "name": "Cobalt",
+      "quantity": 164,
+      "volume": 0.4,
+      "grpId": 427,
+      "iconId": 2570
+    },
+    {
+      "typeId": 16655,
+      "name": "Crystallite Alloy",
+      "quantity": 36,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "33338": [
+    {
+      "typeId": 16646,
+      "name": "Mercury",
+      "quantity": 173,
+      "volume": 0.8,
+      "grpId": 427,
+      "iconId": 2573
+    },
+    {
+      "typeId": 33337,
+      "name": "Promethium Mercurite",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ],
+  "33339": [
+    {
+      "typeId": 16648,
+      "name": "Hafnium",
+      "quantity": 173,
+      "volume": 0.8,
+      "grpId": 427,
+      "iconId": 2572
+    },
+    {
+      "typeId": 33336,
+      "name": "Thulium Hafnite",
+      "quantity": 73,
+      "volume": 1,
+      "grpId": 428,
+      "iconId": 2664
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.item-output {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-output div {
+  width: 25%;
+}
+
+.item-output div:first-child {
+  width: 50%;
+  text-align: left;
+}
+
+.item-output div:last-child {
+  margin-left: 5px;
+}

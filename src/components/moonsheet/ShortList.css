@@ -1,0 +1,20 @@
+.item-output-short {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-output-short div {
+  width: 25%;
+  text-align: right;
+}
+
+.item-output-short div:first-child {
+  width: 50%;
+  text-align: left;
+}
+
+.item-output-short div:last-child {
+  /*margin-left: 5px;*/
+  text-align: right;
+}
