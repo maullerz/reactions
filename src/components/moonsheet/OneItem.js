@@ -24,8 +24,8 @@ const OneItem = (props) => {
   let inputItems = map(item.inputs, (v, i) => {
     let amount = v.quantity * price_input[v.id]
     return (
-      <div key={i} className="row">
-        <div className="col-md-12 col-sm-12 col-xs-12 flex-between">
+      <div className="row">
+        <div key={i} className="col-md-12 col-sm-12 col-xs-12 flex-between">
           <span>
             &nbsp;&nbsp;&nbsp;
             <img className="img16 pen" alt={v.name} src={`https://image.eveonline.com/Type/${v.id}_32.png`} />
@@ -57,14 +57,13 @@ const OneItem = (props) => {
   const outputValueLifeblood = Helper.price(reactionProfit)
 
   return (
-    <div className="row">
       <div className="col-md-12">
         <table className="inside">
           <thead>
           <tr>
             <th>
               <div className="item-output-short">
-                <div>
+                <div className="header-title">
                   <img className="img16 pen" alt={item.name} src={`https://image.eveonline.com/Type/${item.id}_32.png`} />
                   <span>{item.name} x {item.quantity}</span>
                 </div>
@@ -90,7 +89,6 @@ const OneItem = (props) => {
           </tbody>
         </table>
       </div>
-    </div>
   )
 }
 

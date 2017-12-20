@@ -1,5 +1,5 @@
 body {
-  background: url("/bg.jpg") repeat fixed;
+  background: url("./bg.jpg") repeat fixed;
 }
 body .loader {
   left: calc(50% - 30px);
@@ -278,7 +278,7 @@ a:hover {
   margin: 0;
   background-color: rgba(22,112,146,0.2);
   margin-top: 1px;
-  padding: 1px 3px;
+  padding: 1px 0;
 }
 .inside-table .row:hover {
   background-color: rgba(22,112,146,0.25);
@@ -462,7 +462,7 @@ textarea {
 }
 @media (max-width: 375px) {
   body {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 
@@ -474,6 +474,11 @@ textarea {
 }
 
 .control-panel-body {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
   display: flex;
   align-items: center;
 }

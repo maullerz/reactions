@@ -48,7 +48,7 @@ class MoonSheet extends Component {
     return (
       <div className='sheet-root'>
         <div className='row'>
-          <div className='col-md-4 t-a_l col-first'>
+          <div className='col-md-12 t-a_l col-last'>
             <Panel bsClass="control-panel">
               <ToggleButtonGroup type='radio' bsStyle='primary' name='list_type' defaultValue='full'>
                 <ToggleButton bsStyle='primary' value='full' onClick={() => this.setState({ list_type: 'full' })}>{'Full'}</ToggleButton>
@@ -59,8 +59,6 @@ class MoonSheet extends Component {
                 <ToggleButton value='tatara' onClick={() => this.setState({ refinery_type: 'tatara' })}>{'Tatara'}</ToggleButton>
               </ToggleButtonGroup>
             </Panel>
-          </div>
-          <div className='col-md-8 t-a_l col-last'>
             <SheetItems
               reactions={reactions}
               prices={this.state.prices}

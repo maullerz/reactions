@@ -158,7 +158,6 @@ class SheetItems extends React.Component {
   render() {
     const { reactions, prices } = this.props
     if (!prices) return null
-    console.log('reactions', reactions)
     const sortedReactions = this.sortReactions(reactions)
     return this.getReactionsList(sortedReactions, reactions)
   }
