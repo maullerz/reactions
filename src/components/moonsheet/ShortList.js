@@ -18,11 +18,11 @@ const ShortList = (props) => {
   const reactionProfit = Helper.reactionProfit(profit, unrefined, refinery_type)
   const outputValueLifeblood = Helper.price(reactionProfit)
 
-  // const title = `${item.item_id}: ${item.item_name}`
-  const title = `${item.item_name}`
+  // const title = `${item.id}: ${item.name}`
+  const title = `${item.name}`
 
   return (
-    <div key={item.item_id} className="row">
+    <div key={item.id} className="row">
       <div className="col-md-12 col-sm-12 col-xs-12 flex-between item-output-short">
         <div>{title}</div>
         <div className={percColor}>

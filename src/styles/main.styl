@@ -1,0 +1,538 @@
+// Css Precompiler
+@import "mixins.styl"
+// Variables
+main-padding = 3px
+panel-padding = 8px
+color-blue = #0d3647
+color-blue-hover = #0F4E61
+color = #B9964D
+color-dark = #e4d6ba
+color-white = whitesmoke
+color-input = #314756
+color-red = rgba(187, 70, 48, 0.9)
+
+// CSS
+body {
+
+  background url("../img/bg.jpg") repeat fixed;
+
+  .loader {
+    left: calc(50% - 30px)
+    z-index: 2
+    position: fixed
+    width: 40px
+    display: flex
+    justify-content: center
+    padding: 3px 2px 4px
+    color: rgba(39, 39, 40, 0.9)
+    background: #f3f3d1
+    border-bottom-left-radius: 3px
+    border-bottom-right-radius: 3px
+  }
+  .adsbygoogle {
+    text-align: center
+  }
+  #root {
+    max-width 1200px
+    margin 0 auto
+
+    .panel-content {
+      color color-dark;
+      background-color rgba(39, 39, 40, .9);
+      padding panel-padding
+      h1, h2, h3, h4 {
+        padding 0
+        margin 0
+      }
+    }
+
+    .grayback {
+      background-color rgba(39, 39, 40, .9)
+      padding panel-padding
+    }
+
+    header {
+      background-color rgba(39, 39, 40, .9);
+
+      #head {
+        padding 5px 5px 0 15px
+        a {
+          font-size 2em
+          color white
+          font-weight 700
+          text-decoration none
+          &:hover {
+            color rgba(255, 255, 255, .85)
+          }
+        }
+      }
+    }
+  // Tables
+    table {
+      width 100%
+      border-collapse initial
+      thead > tr > th {
+        background-color #0e394c
+        color color-white;
+        padding: 1px 6px
+        select {
+          font-weight normal
+        }
+      }
+      tbody tr td, tfoot tr td {
+        background-color rgba(39, 39, 40, 1);
+        color color-dark
+        ul.list > li {
+          padding 1px 3px
+          background-color rgba(22, 112, 146, .2)
+          margin-top 1px
+          &:last-child {
+            margin-bottom 0
+          }
+          &:hover {
+            cursor pointer
+            background-color rgba(22, 112, 146, .35)
+          }
+          .img24 {
+            margin-right 6px
+            width 28px
+          }
+          &.active {
+            background-color rgba(22, 112, 146, .35)
+            opacity: 1
+          }
+        }
+      }
+    }
+  }
+}
+.flex-between {
+  display flex
+  justify-content space-between
+  align-items center
+}
+
+.txt-normal {
+  font-weight normal
+}
+
+.opacity05 {
+  opacity: 0.4
+}
+
+.h-opacity-1:hover {
+  opacity: 1
+}
+.img16 {
+  margin-left 1px
+  margin-right 4px
+  width 24px
+}
+
+// Manufacture Ul => LI component
+ul.components {
+  li {
+    .containter {
+      margin 0
+      overflow: hidden;
+    }
+    .text-holder {
+      overflow: visible;
+      padding 0
+      font-size 0.85em
+    }
+    .img-box {
+      float left
+      margin-right 3px
+    }
+    .left {
+      float right
+    }
+  }
+}
+
+a {
+  &:link, &:active, &:visited, &:link {
+    color color
+    text-decoration none
+  }
+  &:hover {
+    text-decoration underline
+  }
+}
+
+.float-r {
+  float right
+}
+
+.remove-zone {
+  position: absolute
+  top 0
+  right 0
+}
+
+#aZone {
+  display none
+}
+
+// Color Text
+.txt-yellow, .profit {
+  color #CDDC39
+}
+
+.txt-lime {
+  color #A5D6A7
+}
+
+.profit-minus {
+  color: #E57373
+}
+
+.small-date {
+  fontSize(0.85em)
+}
+
+.b {
+  font-weight bold
+}
+
+.used_img {
+  width 24px
+}
+
+.inline-block-search {
+  display inline-block
+  input {
+    margin 0
+  }
+}
+
+.li-inline {
+  background-color: rgba(22, 112, 146, 0.2)
+  margin-right 1px
+  display inline-block
+  padding panel-padding* 0.8 panel-padding* 1.5 !important
+  &:hover {
+    background-color rgba(22, 112, 146, 0.25)
+  }
+  &.active {
+    background-color rgba(22, 112, 146, 0.5) !important
+    font-weight bold
+  }
+}
+
+// Autocomplete
+.react-autosuggest__container {
+  position relative
+  .react-autosuggest__suggestions-container {
+    z-index 2
+    width 100%
+    position absolute
+    background-color #FFEDCB
+    ul > li.react-autosuggest__suggestion {
+      list-style none
+      padding: 2px
+      cursor pointer
+      color #314756
+      margin 0
+      &:hover {
+        background-color #CCAB84
+      }
+      &:last-child {
+        border 0
+      }
+    }
+    .react-autosuggest__suggestion--focused {
+      background-color #CCAB84
+    }
+  }
+}
+
+.input-search {
+  color color
+  width 100%
+  background transparent
+  border 0
+  outline none
+  border-bottom 1px solid transparent
+  &:focus {
+    border-bottom 1px solid gray
+  }
+}
+
+//  Search input
+.inline {
+  display inline-block
+}
+
+:hover > ul {
+  display block
+}
+
+.user_img, .item_img {
+  cursor pointer
+  margin main-padding 0 0 main-padding
+  border: 1px solid color-blue
+  &:hover {
+    border-color color-blue-hover
+  }
+}
+
+.td-padd-rb {
+  padding 0 main-padding main-padding 0
+}
+
+// Header Menu
+#header-menu {
+  ul {
+    li {
+      font-weight 600
+      color color
+      list-style none
+      position relative
+      display inline-block
+      background-color color-blue
+      margin-right main-padding
+      &:hover {
+        background color-blue-hover
+        cursor pointer
+      }
+      a {
+        color color
+        text-decoration none
+        padding main-padding main-padding+ 3
+        display inline-block
+        &:hover {
+          color color
+        }
+      }
+      &.red-cell {
+        background-color rgba(187, 70, 48, 0.9)
+        color color-white
+        &:hover {
+          background-color rgba(187, 70, 48, 1)
+        }
+        a {
+          color white
+        }
+      }
+
+    }
+  }
+}
+
+// tables BPC
+.inside-table {
+  .row {
+    margin 0
+    background-color rgba(22, 112, 146, .2)
+    margin-top 1px
+    padding 1px 3px
+    &:hover {
+      background-color rgba(22, 112, 146, .25)
+    }
+    div[class^=col-md] {
+      padding 1px 2px
+    }
+    div[class^=col-]:nth-child(1) {
+      text-align right
+      padding-right 6px
+    }
+  }
+}
+
+.inside-table-form {
+  .row {
+    margin 0
+    background-color rgba(22, 112, 146, .2)
+    margin-top 1px
+    padding 2px
+    &:hover {
+      background-color rgba(22, 112, 146, .25)
+    }
+    div[class^=col-md] {
+      padding 1px
+    }
+  }
+}
+
+nav#header-menu > ul > li:hover > ul {
+  display block
+}
+
+nav#header-menu > ul > li > ul {
+  position absolute
+
+  left 0
+  top 100%
+  display none
+  li {
+    z-index 1
+    min-width 130px
+    border-top: 1px solid rgba(39, 39, 40, .9)
+  }
+}
+
+//  Header Menu
+.t-small
+  fontSize(0.85em)
+  fontColor (color-white)
+
+//  Global styles
+input {
+  border 0
+  background-color #ffedcb
+  outline none
+  color color-input
+  width 65px
+  padding 0 1px
+  margin-right 3px
+  &:last-child {
+    margin-right 0
+  }
+}
+
+button {
+  border 0
+}
+
+select, textarea, button
+  border-color #ffe4b2
+  background-color #ffedcb
+  outline none
+  color color-input
+  margin-right 3px
+  &:last-child {
+    margin-right 0
+  }
+
+textarea {
+  resize none
+}
+
+.btn-group {
+  display inline-block
+  margin-right 3px
+  button {
+    cursor pointer
+    margin 0
+    border 0
+    padding 0 main-padding+ 6
+    background-color transparent
+    color #ffedcb
+    &.active {
+      background-color color-blue-hover
+    }
+  }
+}
+
+.reactToolTip {
+  padding 8px !important
+  border 1px solid #0f4e61 !important
+  background-color #272728 !important
+  opacity: 1 !important
+  &.place-top {
+    &:after {
+      border-top-color: #0f4e61 !important;
+      border-top-style: solid !important;
+      border-top-width: 6px !important;
+    }
+  }
+  &.place-left {
+    &:after {
+      border-left-color: #0f4e61 !important;
+      border-left-style: solid !important;
+      border-left-width: 6px !important;
+    }
+  }
+  &.place-right {
+    &:after {
+      border-right-color: #0f4e61 !important;
+      border-right-style: solid !important;
+      border-right-width: 6px !important;
+    }
+  }
+}
+
+.pointer {
+  cursor pointer
+}
+
+.pea {
+  pointer-events: all
+}
+
+.pen {
+  pointer-events: none
+}
+
+.w100
+  width 100%
+
+.w130px
+  width 130px
+
+.t-a_l
+  text-align left
+
+.t-a_r
+  text-align right
+
+.p-b-3
+  padding-bottom main-padding
+
+.m-b-1
+  margin-bottom 1px
+
+.col-first
+  padding-right 1px
+
+.col-midd
+  padding-left 2px
+  padding-right 1px
+
+.col-last
+  padding-left 2px
+
+.padd-3
+  padding 3px
+
+.padd-left-3
+  padding-left 3px
+
+.padd-right-3
+  padding-right 3px
+
+.padd-b-3
+  padding-bottom main-padding
+
+.m-r-3
+  margin-right main-padding
+
+@media (max-width: 1024px)
+  .row
+    margin 0 0 main-padding
+
+  div[class^=col-md]
+    padding 0 2px
+
+@media (max-width: 768px)
+  .row
+    margin 0 0 main-padding
+
+  .col-midd, .col-last
+    margin-top main-padding
+
+  .inside-table {
+    .row {
+      div[class^=col-]:nth-child(1) {
+        text-align left
+      }
+    }
+  }
+
+@media (max-width: 375px)
+  body
+    fontSize(1.3em)
+
+

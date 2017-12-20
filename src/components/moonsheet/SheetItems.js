@@ -13,21 +13,25 @@ const ScrapmetalSkill = 1.1
 const getProfit = (item, props) => {
   const {price_input_type, price_output_type, prices} = props
   let inputAmount = 0
-  item.input.forEach((v, i) => {
-    inputAmount += v.quantity * prices[price_input_type][v.item_id]
+  if (!item.inputs) {
+    // debugger
+    console.error('error item:', item)
+  }
+  item.inputs.forEach((v, i) => {
+    inputAmount += v.quantity * prices[price_input_type][v.id]
   })
-  let amount = prices[price_output_type][item.item_id] * item.quantity
+  let amount = prices[price_output_type][item.id] * item.quantity
   return amount - inputAmount
 }
 
 const getUnrefProfit = (item, props) => {
   const {price_input_type, price_output_type, prices} = props
   let inputAmount = 0
-  item.input.forEach(v => {
-    inputAmount += v.quantity * prices[price_input_type][v.item_id]
+  item.inputs.forEach(v => {
+    inputAmount += v.quantity * prices[price_input_type][v.id]
   })
   let outputAmount = 0
-  const outputs = refinedOutputs[item.item_id]
+  const outputs = refinedOutputs[item.id]
   outputs.forEach(item => {
     const amount = Math.trunc(item.quantity * ReprocessRatio * ScrapmetalSkill)
     outputAmount += prices[price_output_type][item.typeId] * amount
@@ -35,69 +39,80 @@ const getUnrefProfit = (item, props) => {
   return outputAmount - inputAmount
 }
 
-const sortCalcFunc = (item, props) => {
-  const isUnref = startsWith(item.item_name, 'Unref')
+const sortCalcFunc = (typeId, reactions, props) => {
+  const item = reactions[typeId]
+  const isUnref = startsWith(item.name, 'Unref')
   const profit = isUnref ? getUnrefProfit(item, props) : getProfit(item, props)
   return Helper.reactionProfit(profit, isUnref)
 }
 
+
 class SheetItems extends React.Component {
+
   sortReactions(reactions) {
-    return reactions.sort((a, b) => {
-      const diffA = sortCalcFunc(a, this.props)
-      const diffB = sortCalcFunc(b, this.props)
+    return Object.keys(reactions).sort((a, b) => {
+      const diffA = sortCalcFunc(a, reactions, this.props)
+      const diffB = sortCalcFunc(b, reactions, this.props)
       return diffB - diffA
     })
   }
 
-  getReactionsList(reactions) {
+  getReactionsList(sortedReactionsIds, reactions) {
     const {filter, price_input_type, price_output_type, prices, list_type, refinery_type} = this.props
     if (reactions.length === 0) {
       return null
     }
-    let resultList = map(reactions, (v, i) => {
-      let inputItems = map(v.input, 'item_name')
-      inputItems.push(v.item_name)
-      let ftd = map(inputItems, v => v.toLowerCase())
-      ftd = ftd.join(',')
+    const resultList = map(sortedReactionsIds, typeId => {
 
-      if (ftd.indexOf(String(filter).toLowerCase()) === -1) {
-        return null
-      }
-      const isUnref = startsWith(v.item_name, 'Unref')
+      // FILTER
+      // const inputItems = map(v.input, 'name')
+      // inputItems.push(v.name)
+      // let ftd = map(inputItems, v => v.toLowerCase())
+      // ftd = ftd.join(',')
+
+      // if (ftd.indexOf(String(filter).toLowerCase()) === -1) {
+      //   return null
+      // }
+
+      const item = reactions[typeId]
+      const isUnref = startsWith(item.name, 'Unref')
 
       // Without unref
       // if (isUnref) return null
 
-      const FullList = <OneItem
-        key={i}
-        item={v}
-        refinery_type={refinery_type}
-        unrefined={isUnref}
-        getProfit={isUnref ? getUnrefProfit : getProfit}
-        prices={prices}
-        price_input_type={price_input_type}
-        price_output_type={price_output_type}
-      />
 
-      const shortList = <ShortList
-        key={i}
-        item={v}
-        refinery_type={refinery_type}
-        unrefined={isUnref}
-        getProfit={isUnref ? getUnrefProfit : getProfit}
-        prices={prices}
-        price_input_type={price_input_type}
-        price_output_type={price_output_type}
-      />
-
-      return list_type === 'full' ? FullList : shortList
+      if (list_type === 'full')
+        return (
+          <OneItem
+            key={typeId}
+            item={item}
+            refinery_type={refinery_type}
+            unrefined={isUnref}
+            getProfit={isUnref ? getUnrefProfit : getProfit}
+            prices={prices}
+            reactions={reactions}
+            price_input_type={price_input_type}
+            price_output_type={price_output_type}
+          />
+        )
+      else
+        return (
+          <ShortList
+            key={typeId}
+            item={item}
+            refinery_type={refinery_type}
+            unrefined={isUnref}
+            getProfit={isUnref ? getUnrefProfit : getProfit}
+            prices={prices}
+            price_input_type={price_input_type}
+            price_output_type={price_output_type}
+          />
+        )
     })
 
 
     const sheetTitle = this.renderHeader(list_type)
 
-    // return list_type === 'full' ? <div>{resultList}</div> : (
     return (
       <div className="row">
         <div className="col-md-12">
@@ -141,9 +156,11 @@ class SheetItems extends React.Component {
   }
 
   render() {
-    const {reactions} = this.props
+    const { reactions, prices } = this.props
+    if (!prices) return null
+    console.log('reactions', reactions)
     const sortedReactions = this.sortReactions(reactions)
-    return this.getReactionsList(sortedReactions)
+    return this.getReactionsList(sortedReactions, reactions)
   }
 }
 

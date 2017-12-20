@@ -1,0 +1,938 @@
+{
+  "17941": {
+    "id": 16663,
+    "name": "Caesarium Cadmide",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      },
+      {
+        "id": 16647,
+        "name": "Caesium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17942": {
+    "id": 16659,
+    "name": "Carbon Polymers",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16633,
+        "name": "Hydrocarbons",
+        "quantity": 100
+      },
+      {
+        "id": 16636,
+        "name": "Silicates",
+        "quantity": 100
+      }
+    ]
+  },
+  "17943": {
+    "id": 16660,
+    "name": "Ceramic Powder",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100
+      },
+      {
+        "id": 16636,
+        "name": "Silicates",
+        "quantity": 100
+      }
+    ]
+  },
+  "17944": {
+    "id": 16655,
+    "name": "Crystallite Alloy",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16640,
+        "name": "Cobalt",
+        "quantity": 100
+      },
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17945": {
+    "id": 16668,
+    "name": "Dysporite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100
+      },
+      {
+        "id": 16650,
+        "name": "Dysprosium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17946": {
+    "id": 16656,
+    "name": "Fernite Alloy",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16639,
+        "name": "Scandium",
+        "quantity": 100
+      },
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17947": {
+    "id": 16669,
+    "name": "Ferrofluid",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100
+      },
+      {
+        "id": 16650,
+        "name": "Dysprosium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17948": {
+    "id": 17769,
+    "name": "Fluxed Condensates",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16651,
+        "name": "Neodymium",
+        "quantity": 100
+      },
+      {
+        "id": 16653,
+        "name": "Thulium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17949": {
+    "id": 16665,
+    "name": "Hexite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      },
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100
+      }
+    ]
+  },
+  "17950": {
+    "id": 16666,
+    "name": "Hyperflurite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      },
+      {
+        "id": 16652,
+        "name": "Promethium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17951": {
+    "id": 16667,
+    "name": "Neo Mercurite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100
+      },
+      {
+        "id": 16651,
+        "name": "Neodymium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17952": {
+    "id": 16662,
+    "name": "Platinum Technite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100
+      },
+      {
+        "id": 16649,
+        "name": "Technetium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17953": {
+    "id": 16657,
+    "name": "Rolled Tungsten Alloy",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16637,
+        "name": "Tungsten",
+        "quantity": 100
+      },
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100
+      }
+    ]
+  },
+  "17954": {
+    "id": 16658,
+    "name": "Silicon Diborite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100
+      },
+      {
+        "id": 16636,
+        "name": "Silicates",
+        "quantity": 100
+      }
+    ]
+  },
+  "17955": {
+    "id": 16664,
+    "name": "Solerium",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      },
+      {
+        "id": 16647,
+        "name": "Caesium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17956": {
+    "id": 16661,
+    "name": "Sulfuric Acid",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16634,
+        "name": "Atmospheric Gases",
+        "quantity": 100
+      },
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100
+      }
+    ]
+  },
+  "17957": {
+    "id": 16654,
+    "name": "Titanium Chromide",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16638,
+        "name": "Titanium",
+        "quantity": 100
+      },
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17958": {
+    "id": 17959,
+    "name": "Vanadium Hafnite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      },
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17961": {
+    "id": 17960,
+    "name": "Prometium",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      },
+      {
+        "id": 16652,
+        "name": "Promethium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17962": {
+    "id": 16671,
+    "name": "Titanium Carbide",
+    "quantity": 10000,
+    "inputs": [
+      {
+        "id": 16654,
+        "name": "Titanium Chromide",
+        "quantity": 100
+      },
+      {
+        "id": 16658,
+        "name": "Silicon Diborite",
+        "quantity": 100
+      }
+    ]
+  },
+  "17963": {
+    "id": 16670,
+    "name": "Crystalline Carbonide",
+    "quantity": 10000,
+    "inputs": [
+      {
+        "id": 16655,
+        "name": "Crystallite Alloy",
+        "quantity": 100
+      },
+      {
+        "id": 16659,
+        "name": "Carbon Polymers",
+        "quantity": 100
+      }
+    ]
+  },
+  "17964": {
+    "id": 16673,
+    "name": "Fernite Carbide",
+    "quantity": 10000,
+    "inputs": [
+      {
+        "id": 16656,
+        "name": "Fernite Alloy",
+        "quantity": 100
+      },
+      {
+        "id": 16660,
+        "name": "Ceramic Powder",
+        "quantity": 100
+      }
+    ]
+  },
+  "17965": {
+    "id": 16672,
+    "name": "Tungsten Carbide",
+    "quantity": 10000,
+    "inputs": [
+      {
+        "id": 16657,
+        "name": "Rolled Tungsten Alloy",
+        "quantity": 100
+      },
+      {
+        "id": 16661,
+        "name": "Sulfuric Acid",
+        "quantity": 100
+      }
+    ]
+  },
+  "17966": {
+    "id": 16678,
+    "name": "Sylramic Fibers",
+    "quantity": 6000,
+    "inputs": [
+      {
+        "id": 16660,
+        "name": "Ceramic Powder",
+        "quantity": 100
+      },
+      {
+        "id": 16665,
+        "name": "Hexite",
+        "quantity": 100
+      }
+    ]
+  },
+  "17967": {
+    "id": 16679,
+    "name": "Fullerides",
+    "quantity": 3000,
+    "inputs": [
+      {
+        "id": 16659,
+        "name": "Carbon Polymers",
+        "quantity": 100
+      },
+      {
+        "id": 16662,
+        "name": "Platinum Technite",
+        "quantity": 100
+      }
+    ]
+  },
+  "17968": {
+    "id": 16680,
+    "name": "Phenolic Composites",
+    "quantity": 2200,
+    "inputs": [
+      {
+        "id": 16658,
+        "name": "Silicon Diborite",
+        "quantity": 100
+      },
+      {
+        "id": 16663,
+        "name": "Caesarium Cadmide",
+        "quantity": 100
+      },
+      {
+        "id": 17959,
+        "name": "Vanadium Hafnite",
+        "quantity": 100
+      }
+    ]
+  },
+  "17969": {
+    "id": 16681,
+    "name": "Nanotransistors",
+    "quantity": 1500,
+    "inputs": [
+      {
+        "id": 16661,
+        "name": "Sulfuric Acid",
+        "quantity": 100
+      },
+      {
+        "id": 16662,
+        "name": "Platinum Technite",
+        "quantity": 100
+      },
+      {
+        "id": 16667,
+        "name": "Neo Mercurite",
+        "quantity": 100
+      }
+    ]
+  },
+  "17970": {
+    "id": 16682,
+    "name": "Hypersynaptic Fibers",
+    "quantity": 750,
+    "inputs": [
+      {
+        "id": 16664,
+        "name": "Solerium",
+        "quantity": 100
+      },
+      {
+        "id": 16668,
+        "name": "Dysporite",
+        "quantity": 100
+      },
+      {
+        "id": 17959,
+        "name": "Vanadium Hafnite",
+        "quantity": 100
+      }
+    ]
+  },
+  "17971": {
+    "id": 16683,
+    "name": "Ferrogel",
+    "quantity": 400,
+    "inputs": [
+      {
+        "id": 16665,
+        "name": "Hexite",
+        "quantity": 100
+      },
+      {
+        "id": 16666,
+        "name": "Hyperflurite",
+        "quantity": 100
+      },
+      {
+        "id": 16669,
+        "name": "Ferrofluid",
+        "quantity": 100
+      },
+      {
+        "id": 17960,
+        "name": "Prometium",
+        "quantity": 100
+      }
+    ]
+  },
+  "17972": {
+    "id": 17317,
+    "name": "Fermionic Condensates",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16663,
+        "name": "Caesarium Cadmide",
+        "quantity": 100
+      },
+      {
+        "id": 16668,
+        "name": "Dysporite",
+        "quantity": 100
+      },
+      {
+        "id": 17769,
+        "name": "Fluxed Condensates",
+        "quantity": 100
+      },
+      {
+        "id": 17960,
+        "name": "Prometium",
+        "quantity": 100
+      }
+    ]
+  },
+  "29640": {
+    "id": 29664,
+    "name": "Unrefined Hyperflurite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      },
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      }
+    ]
+  },
+  "29641": {
+    "id": 29663,
+    "name": "Unrefined Ferrofluid",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      },
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100
+      }
+    ]
+  },
+  "29642": {
+    "id": 29662,
+    "name": "Unrefined Prometium",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      },
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      }
+    ]
+  },
+  "29643": {
+    "id": 29661,
+    "name": "Unrefined Neo Mercurite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100
+      },
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100
+      }
+    ]
+  },
+  "29644": {
+    "id": 29660,
+    "name": "Unrefined Dysporite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      },
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100
+      }
+    ]
+  },
+  "29645": {
+    "id": 29659,
+    "name": "Unrefined Fluxed Condensates",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      },
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100
+      }
+    ]
+  },
+  "32830": {
+    "id": 32821,
+    "name": "Unrefined Vanadium Hafnite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16638,
+        "name": "Titanium",
+        "quantity": 100
+      },
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      }
+    ]
+  },
+  "32831": {
+    "id": 32822,
+    "name": "Unrefined Platinum Technite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16640,
+        "name": "Cobalt",
+        "quantity": 100
+      },
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100
+      }
+    ]
+  },
+  "32832": {
+    "id": 32823,
+    "name": "Unrefined Solerium",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16639,
+        "name": "Scandium",
+        "quantity": 100
+      },
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      }
+    ]
+  },
+  "32833": {
+    "id": 32824,
+    "name": "Unrefined Caesarium Cadmide",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16639,
+        "name": "Scandium",
+        "quantity": 100
+      },
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100
+      }
+    ]
+  },
+  "32834": {
+    "id": 32825,
+    "name": "Unrefined Hexite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100
+      },
+      {
+        "id": 16634,
+        "name": "Atmospheric Gases",
+        "quantity": 100
+      }
+    ]
+  },
+  "32835": {
+    "id": 32826,
+    "name": "Unrefined Rolled Tungsten Alloy",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16634,
+        "name": "Atmospheric Gases",
+        "quantity": 100
+      },
+      {
+        "id": 16637,
+        "name": "Tungsten",
+        "quantity": 100
+      }
+    ]
+  },
+  "32836": {
+    "id": 32827,
+    "name": "Unrefined Titanium Chromide",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100
+      },
+      {
+        "id": 16638,
+        "name": "Titanium",
+        "quantity": 100
+      }
+    ]
+  },
+  "32837": {
+    "id": 32828,
+    "name": "Unrefined Fernite Alloy",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16633,
+        "name": "Hydrocarbons",
+        "quantity": 100
+      },
+      {
+        "id": 16639,
+        "name": "Scandium",
+        "quantity": 100
+      }
+    ]
+  },
+  "32838": {
+    "id": 32829,
+    "name": "Unrefined Crystallite Alloy",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16636,
+        "name": "Silicates",
+        "quantity": 100
+      },
+      {
+        "id": 16640,
+        "name": "Cobalt",
+        "quantity": 100
+      }
+    ]
+  },
+  "33340": {
+    "id": 33336,
+    "name": "Thulium Hafnite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16653,
+        "name": "Thulium",
+        "quantity": 100
+      },
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100
+      }
+    ]
+  },
+  "33341": {
+    "id": 33337,
+    "name": "Promethium Mercurite",
+    "quantity": 200,
+    "inputs": [
+      {
+        "id": 16652,
+        "name": "Promethium",
+        "quantity": 100
+      },
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100
+      }
+    ]
+  },
+  "33342": {
+    "id": 33339,
+    "name": "Unrefined Thulium Hafnite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100
+      },
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100
+      }
+    ]
+  },
+  "33343": {
+    "id": 33338,
+    "name": "Unrefined Promethium Mercurite",
+    "quantity": 1,
+    "inputs": [
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100
+      },
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100
+      }
+    ]
+  },
+  "33363": {
+    "id": 33362,
+    "name": "Nonlinear Metamaterials",
+    "quantity": 300,
+    "inputs": [
+      {
+        "id": 16669,
+        "name": "Ferrofluid",
+        "quantity": 100
+      },
+      {
+        "id": 16654,
+        "name": "Titanium Chromide",
+        "quantity": 100
+      }
+    ]
+  },
+  "33364": {
+    "id": 33359,
+    "name": "Photonic Metamaterials",
+    "quantity": 300,
+    "inputs": [
+      {
+        "id": 33336,
+        "name": "Thulium Hafnite",
+        "quantity": 100
+      },
+      {
+        "id": 16655,
+        "name": "Crystallite Alloy",
+        "quantity": 100
+      }
+    ]
+  },
+  "33365": {
+    "id": 33361,
+    "name": "Plasmonic Metamaterials",
+    "quantity": 300,
+    "inputs": [
+      {
+        "id": 16667,
+        "name": "Neo Mercurite",
+        "quantity": 100
+      },
+      {
+        "id": 16656,
+        "name": "Fernite Alloy",
+        "quantity": 100
+      }
+    ]
+  },
+  "33366": {
+    "id": 33360,
+    "name": "Terahertz Metamaterials",
+    "quantity": 300,
+    "inputs": [
+      {
+        "id": 33337,
+        "name": "Promethium Mercurite",
+        "quantity": 100
+      },
+      {
+        "id": 16657,
+        "name": "Rolled Tungsten Alloy",
+        "quantity": 100
+      }
+    ]
+  }
+}
