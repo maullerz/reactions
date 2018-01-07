@@ -17,19 +17,22 @@ const OneItem = (props) => {
     getProfit,
     unrefined,
     refinery_type,
+    efficiency,
   } = props
   const price_input = prices[price_input_type]
   const price_output = prices[price_output_type]
+  const eff = efficiency ? 0.978 : 1
 
-  let inputItems = map(item.inputs, (v, i) => {
-    let amount = v.quantity * price_input[v.id]
+  const inputItems = map(item.inputs, (v, i) => {
+    const effQuantity = Math.ceil(v.quantity * eff)
+    const amount = effQuantity * price_input[v.id]
     return (
       <div className="row">
         <div key={i} className="col-md-12 col-sm-12 col-xs-12 flex-between">
           <span>
             &nbsp;&nbsp;&nbsp;
             <img className="img16 pen" alt={v.name} src={`https://image.eveonline.com/Type/${v.id}_32.png`} />
-            {v.name} {v.quantity} x {Helper.price(price_input[v.id])} isk
+            {`${v.name} ${effQuantity} x ${Helper.price(price_input[v.id])} isk`}
           </span>
           <span>{Helper.price(amount)}</span>
         </div>
@@ -57,15 +60,24 @@ const OneItem = (props) => {
   const outputValueLifeblood = Helper.price(reactionProfit)
 
   return (
-      <div className="col-md-12">
+    <div className="row" style={{ paddingLeft: 0, paddingRight: 0 }}>
+      <div className="col-md-12" style={{ paddingLeft: 0, paddingRight: 0 }}>
         <table className="inside">
           <thead>
           <tr>
             <th>
               <div className="item-output-short">
                 <div className="header-title">
-                  <img className="img16 pen" alt={item.name} src={`https://image.eveonline.com/Type/${item.id}_32.png`} />
-                  <span>{item.name} x {item.quantity}</span>
+                  <div style={{ width: 'auto' }}>
+                    <img
+                      className="img16 pen"
+                      alt={item.name}
+                      src={`https://image.eveonline.com/Type/${item.id}_32.png`}
+                    />
+                  </div>
+                  <div style={{ width: '100%', textAlign: 'left' }}>
+                    {`${item.name} x ${item.quantity}`}
+                  </div>
                 </div>
                 <div className={percColor}>
                   {outputValue}
@@ -89,6 +101,7 @@ const OneItem = (props) => {
           </tbody>
         </table>
       </div>
+    </div>
   )
 }
 

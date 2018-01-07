@@ -11,24 +11,26 @@ const ReprocessRatio = 0.52
 const ScrapmetalSkill = 1.1
 
 const getProfit = (item, props) => {
-  const {price_input_type, price_output_type, prices} = props
+  const { price_input_type, price_output_type, prices, efficiency } = props
   let inputAmount = 0
   if (!item.inputs) {
     // debugger
     console.error('error item:', item)
   }
+  const eff = efficiency ? 0.978 : 1
   item.inputs.forEach((v, i) => {
-    inputAmount += v.quantity * prices[price_input_type][v.id]
+    inputAmount += Math.ceil((v.quantity * prices[price_input_type][v.id] * 100 * eff) / 100)
   })
-  let amount = prices[price_output_type][item.id] * item.quantity
+  let amount = item.quantity * prices[price_output_type][item.id]
   return amount - inputAmount
 }
 
 const getUnrefProfit = (item, props) => {
-  const {price_input_type, price_output_type, prices} = props
+  const { price_input_type, price_output_type, prices, efficiency } = props
   let inputAmount = 0
+  const eff = efficiency ? 0.978 : 1
   item.inputs.forEach(v => {
-    inputAmount += v.quantity * prices[price_input_type][v.id]
+    inputAmount += Math.ceil((v.quantity * prices[price_input_type][v.id] * 100 * eff) / 100)
   })
   let outputAmount = 0
   const outputs = refinedOutputs[item.id]
@@ -58,7 +60,7 @@ class SheetItems extends React.Component {
   }
 
   getReactionsList(sortedReactionsIds, reactions) {
-    const {filter, price_input_type, price_output_type, prices, list_type, refinery_type} = this.props
+    const { filter, price_input_type, price_output_type, prices, list_type, refinery_type, efficiency } = this.props
     if (reactions.length === 0) {
       return null
     }
@@ -93,6 +95,7 @@ class SheetItems extends React.Component {
             reactions={reactions}
             price_input_type={price_input_type}
             price_output_type={price_output_type}
+            efficiency={efficiency}
           />
         )
       else
@@ -106,6 +109,7 @@ class SheetItems extends React.Component {
             prices={prices}
             price_input_type={price_input_type}
             price_output_type={price_output_type}
+            efficiency={efficiency}
           />
         )
     })

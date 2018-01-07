@@ -469,16 +469,17 @@ textarea {
 
 .control-panel {
   background-color: #222;
-  padding: 8px 24px;
-  display: flex;
+  padding: 5px;
 }
 
 .control-panel-body {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .header-title {
   display: flex;
   align-items: center;
+  padding-bottom: 3px;
 }
