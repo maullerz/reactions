@@ -91,6 +91,7 @@ class SheetItems extends React.Component {
             refinery_type={refinery_type}
             unrefined={isUnref}
             getProfit={isUnref ? getUnrefProfit : getProfit}
+            getProfitFunc={isUnref => isUnref ? getUnrefProfit : getProfit}
             prices={prices}
             reactions={reactions}
             price_input_type={price_input_type}
@@ -115,6 +116,7 @@ class SheetItems extends React.Component {
     })
 
 
+    // console.log('reactions:', reactions)
     const sheetTitle = this.renderHeader(list_type)
 
     return (

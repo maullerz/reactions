@@ -1,9 +1,10 @@
 import axios from 'axios'
 
-const baseUrl = 'http://api.eve-prod.xyz'
-const esiUrl = 'https://esi.tech.ccp.is'
-const crestUrl = 'https://crest-tq.eveonline.com'
-
+// const baseUrl = 'http://api.eve-prod.xyz'
+// const esiUrl = 'https://esi.tech.ccp.is'
+// const crestUrl = 'https://crest-tq.eveonline.com'
+// const marketUrl = 'https://api.evemarketer.com/ec/marketstat/json?regionlimit=10000002&typeid=' // The Forge
+const marketUrl = 'https://api.evemarketer.com/ec/marketstat/json?usesystem=30000142&typeid=' // Jita
 
 const MOONMAT_ITEMS = [
   16633,16634,16635,16636,16637,16638,16639,16640,16641,16642,16643,16644,16646,16647,16648,
@@ -15,9 +16,8 @@ const ITEMS = MOONMAT_ITEMS.join(',')
 
 
 export const getMoonmatPrices = () => {
-  const url = 'https://api.evemarketer.com/ec/marketstat/json?regionlimit=10000002&typeid='
   return axios.get(
-    url + ITEMS,
+    marketUrl + ITEMS,
     { headers: { 'Access-Control-Allow-Origin': '*' } },
   )
 }

@@ -30,19 +30,15 @@ class MoonSheet extends Component {
       const sell = {}
       data.forEach(item => {
         const typeId = item.buy.forQuery.types[0]
-        buy[typeId] = item.buy.max
-        sell[typeId] = item.sell.min
+        // buy[typeId] = item.buy.max
+        // sell[typeId] = item.sell.min
+        buy[typeId] = item.buy.fivePercent
+        sell[typeId] = item.sell.fivePercent
         if (!item.buy.max) {
           console.log('zero buy:', item)
         }
         if (!item.sell.min) {
           console.log('zero sell:', item)
-          // if (typeId === 16648) {
-          //   buy[typeId] = 9200
-          //   sell[typeId] = 10500
-          // } else {
-          //   console.log('zero sell:', item)
-          // }
         }
       })
 
