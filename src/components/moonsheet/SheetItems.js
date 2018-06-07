@@ -7,7 +7,7 @@ import refinedOutputs from './refinedOutputs.json'
 // components
 import ShortList from './ShortList'
 
-const ReprocessRatio = 0.52
+const ReprocessRatio = 0.50
 const ScrapmetalSkill = 1.1
 
 const getProfit = (item, props) => {
@@ -80,7 +80,7 @@ class SheetItems extends React.Component {
       const isUnref = startsWith(item.name, 'Unref')
 
       // Without unref
-      // if (isUnref) return null
+      // if (!isUnref) return null
 
 
       if (list_type === 'full')
