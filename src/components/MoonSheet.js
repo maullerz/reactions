@@ -106,14 +106,16 @@ class MoonSheet extends Component {
               <Button
                 bsSize='small'
                 onClick={this.toggleEfficiency}
-                style={{ width: 72 }}
+                style={{ paddingLeft: 4, paddingRight: 4 }}
+                active={efficiency}
               >
                 {effStr}
               </Button>
               <Button
                 bsSize='small'
                 onClick={this.toggleRuns}
-                style={{ width: 56, paddingLeft: 3, paddingRight: 3 }}
+                style={{ paddingLeft: 4, paddingRight: 4 }}
+                active={hundredRuns}
               >
                 {hundredRuns ? '100 runs' : '1 run'}
               </Button>
