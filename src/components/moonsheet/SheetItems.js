@@ -67,9 +67,18 @@ class SheetItems extends React.Component {
 
     const resultList = map(sortedReactionsIds, typeId => {
       const item = reactions[typeId]
-      if (filter && item.name.toLowerCase().indexOf(filter) < 0) {
-        return null
+
+      if (filter) {
+        const matchedOutput = item.lcName.indexOf(filter) >= 0
+        if (list_type === 'short' && !matchedOutput) {
+          return null
+        }
+        const matchedInputs = item.inputs.find(input => input.lcName.indexOf(filter) >= 0)
+        if (!matchedInputs && !matchedOutput) {
+          return null
+        }
       }
+
       const isUnref = startsWith(item.name, 'Unref')
 
       // Without unref
@@ -136,7 +145,7 @@ class SheetItems extends React.Component {
   renderHeader(list_type) {
     if (list_type === 'full') {
       return (
-        <div className="item-output-short">
+        <div className="item-output-short header">
           <div>Output & Inputs</div>
           <div>Profit per Cycle</div>
           <div>Profit per Hour</div>
@@ -145,7 +154,7 @@ class SheetItems extends React.Component {
       )
     }
     return (
-      <div className="col-md-12 col-sm-12 col-xs-12 flex-between item-output-short">
+      <div className="col-md-12 col-sm-12 col-xs-12 flex-between item-output-short header">
         <div>Output</div>
         <div>Profit per Cycle</div>
         <div>Profit per Hour</div>

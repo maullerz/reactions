@@ -24,7 +24,14 @@ const ShortList = (props) => {
   return (
     <div key={item.id} className="row">
       <div className="col-md-12 col-sm-12 col-xs-12 flex-between item-output-short">
-        <div>{title}</div>
+        <div>
+          <img
+            className="img16 pen"
+            alt={title}
+            src={`https://image.eveonline.com/Type/${item.id}_32.png`}
+          />
+          {title}
+        </div>
         <div className={percColor}>
           {Helper.price(outputValue)}
         </div>

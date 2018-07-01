@@ -59,7 +59,7 @@ body #root table {
 body #root table thead > tr > th {
   background-color: #0e394c;
   color: #f5f5f5;
-  padding: 1px 6px;
+  /*padding: 1px 6px;*/
 }
 body #root table thead > tr > th select {
   font-weight: normal;
@@ -211,13 +211,6 @@ a:hover {
 }
 .react-autosuggest__container .react-autosuggest__suggestions-container .react-autosuggest__suggestion--focused {
   background-color: #ccab84;
-}
-.input-search {
-  color: #e4d6ba;
-  width: 100%;
-  background: transparent;
-  border: 0;
-  outline: none;
 }
 .inline {
   display: inline-block;

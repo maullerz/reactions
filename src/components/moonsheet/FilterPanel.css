@@ -1,10 +1,19 @@
-
+.input-search {
+  color: #e4d6ba;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+}
 
 .clearIcon {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 8px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
   right: 20px;
   cursor: pointer;
 

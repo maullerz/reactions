@@ -41,31 +41,31 @@ const OneItem = (props) => {
       var isUnref = startsWith(v.name, 'Unref')
       var profit = getProfitFunc(isUnref)(reaction, props)
       var outputValue = Helper.price(profit)
-      var percColor = profit >= 0 ? "txt-yellow" : "profit-minus"
+      // var percColor = profit >= 0 ? "txt-yellow" : "profit-minus"
       // Lifeblood Athanor
       var reactionProfit = Helper.reactionProfit(profit, isUnref, refinery_type)
       var componentProfit = Helper.price(reactionProfit)
-      // console.log('reaction', v.name, profit, componentProfit)
     }
+
+    // const title = `${v.name} ${effQuantity} x ${Helper.price(price_input[v.id])} isk`
+    const title = `${v.name} x ${effQuantity}`
 
     return (
       <div className="row" key={v.name}>
         <div className="col-md-12 col-sm-12 col-xs-12 flex-between">
-          <span style={{ width: '50%', textAlign: 'left' }}>
-            &nbsp;&nbsp;&nbsp;
+          <span className="item-title-cell">
             <img className="img16 pen" alt={v.name} src={`https://image.eveonline.com/Type/${v.id}_32.png`} />
-            {`${v.name} ${effQuantity} x ${Helper.price(price_input[v.id])} isk`}
+            <span>{title}</span>
           </span>
-          <span style={{ width: '25%', textAlign: 'right' }}>{outputValue}</span>
-          <span style={{ width: '25%', textAlign: 'right' }}>{componentProfit}</span>
-          <span style={{ width: '25%', textAlign: 'right' }}>{Helper.price(amount)}</span>
+          <span className="item-cell">{outputValue}</span>
+          <span className="item-cell">{componentProfit}</span>
+          <span className="item-cell">{Helper.price(amount)}</span>
         </div>
       </div>
     )
   })
 
   let outputCost = 0
-  let outputCostLifeblood = 0
   if (unrefined) {
     const outputs = refinedOutputs[item.id]
     outputs.forEach(item => {
@@ -90,7 +90,7 @@ const OneItem = (props) => {
           <thead>
           <tr>
             <th>
-              <div className="item-output-short">
+              <div className="item-output">
                 <div className="header-title">
                   <div style={{ width: 'auto' }}>
                     <img
@@ -109,7 +109,7 @@ const OneItem = (props) => {
                 <div className={percColor}>
                   {outputValueLifeblood}
                 </div>
-                <div className="txt-normal">
+                <div className="txt-normal" style={{ marginRight: 6 }}>
                   {Helper.price(outputCost)}
                 </div>
               </div>

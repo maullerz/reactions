@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.item-output-short.header {
+  padding: 1px 6px;
+}
+
 .item-output-short div {
   width: 25%;
   text-align: right;

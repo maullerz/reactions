@@ -4,7 +4,6 @@ import { Panel, Button, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
 import SheetItems from './moonsheet/SheetItems'
 import FilterPanel from './moonsheet/FilterPanel'
 import { getMoonmatPrices } from '../lib/api'
-import './MoonSheet.css'
 
 const reactions = require('./reactions.json')
 
@@ -16,14 +15,13 @@ class MoonSheet extends Component {
     list_type: 'full',
     refinery_type: 'athanor',
     efficiency: true,
+    hundredRuns: false,
   }
 
-  componentWillMount() {
-    // 100 runs
-    // forEach(reactions, item => {
-    //   item.quantity = item.quantity * 100
-    //   item.inputs.forEach(input => input.quantity = input.quantity * 100)
-    // })
+  componentDidMount() {
+    if (this.state.hundredRuns) {
+      this.makeHundredRuns()
+    }
 
     getMoonmatPrices().then(({ data }) => {
       // console.log('data:', data)
@@ -46,6 +44,29 @@ class MoonSheet extends Component {
       const prices = { sell, buy }
       this.setState({ prices })
     })
+
+    this.makeLowerCaseNames()
+  }
+
+  makeSingleRun() {
+    forEach(reactions, item => {
+      item.quantity = item.quantity / 100
+      item.inputs.forEach(input => input.quantity = input.quantity / 100)
+    })
+  }
+
+  makeHundredRuns() {
+    forEach(reactions, item => {
+      item.quantity = item.quantity * 100
+      item.inputs.forEach(input => input.quantity = input.quantity * 100)
+    })
+  }
+
+  makeLowerCaseNames() {
+    forEach(reactions, item => {
+      item.lcName = item.name.toLowerCase()
+      item.inputs.forEach(input => input.lcName = input.name.toLowerCase())
+    })
   }
 
   toggleEfficiency = () => {
@@ -56,8 +77,14 @@ class MoonSheet extends Component {
     this.setState({ filterValue })
   }
 
+  toggleRuns = () => {
+    const { hundredRuns } = this.state
+    this.setState({ hundredRuns: !hundredRuns })
+    hundredRuns ? this.makeSingleRun() : this.makeHundredRuns()
+  }
+
   render() {
-    const { list_type, refinery_type, efficiency, filterValue } = this.state
+    const { list_type, refinery_type, efficiency, filterValue, hundredRuns } = this.state
     const effStr = efficiency ? '2.2% ME' : '0% ME'
     return (
       <div className='sheet-root'>
@@ -78,11 +105,17 @@ class MoonSheet extends Component {
               </ToggleButtonGroup>
               <Button
                 bsSize='small'
-                value='2.2% ME'
                 onClick={this.toggleEfficiency}
                 style={{ width: 72 }}
               >
                 {effStr}
+              </Button>
+              <Button
+                bsSize='small'
+                onClick={this.toggleRuns}
+                style={{ width: 56, paddingLeft: 3, paddingRight: 3 }}
+              >
+                {hundredRuns ? '100 runs' : '1 run'}
               </Button>
             </Panel>
           </div>
