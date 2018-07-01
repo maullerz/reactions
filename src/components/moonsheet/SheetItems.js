@@ -64,24 +64,16 @@ class SheetItems extends React.Component {
     if (reactions.length === 0) {
       return null
     }
+
     const resultList = map(sortedReactionsIds, typeId => {
-
-      // FILTER
-      // const inputItems = map(v.input, 'name')
-      // inputItems.push(v.name)
-      // let ftd = map(inputItems, v => v.toLowerCase())
-      // ftd = ftd.join(',')
-
-      // if (ftd.indexOf(String(filter).toLowerCase()) === -1) {
-      //   return null
-      // }
-
       const item = reactions[typeId]
+      if (filter && item.name.toLowerCase().indexOf(filter) < 0) {
+        return null
+      }
       const isUnref = startsWith(item.name, 'Unref')
 
       // Without unref
       // if (!isUnref) return null
-
 
       if (list_type === 'full')
         return (

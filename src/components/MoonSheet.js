@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { forEach } from 'lodash'
 import { Panel, Button, ToggleButton, ToggleButtonGroup } from 'react-bootstrap'
 import SheetItems from './moonsheet/SheetItems'
+import FilterPanel from './moonsheet/FilterPanel'
 import { getMoonmatPrices } from '../lib/api'
 import './MoonSheet.css'
 
@@ -47,12 +48,24 @@ class MoonSheet extends Component {
     })
   }
 
+  toggleEfficiency = () => {
+    this.setState({ efficiency: !this.state.efficiency })
+  }
+
+  handleFilter = filterValue => {
+    this.setState({ filterValue })
+  }
+
   render() {
-    const { list_type, refinery_type, efficiency } = this.state
+    const { list_type, refinery_type, efficiency, filterValue } = this.state
     const effStr = efficiency ? '2.2% ME' : '0% ME'
     return (
       <div className='sheet-root'>
         <div className='row'>
+          <FilterPanel
+            isOpened={this.props.filterOpened}
+            onFilter={this.handleFilter}
+          />
           <div className='col-md-4 t-a_l col-first'>
             <Panel bsClass="control-panel">
               <ToggleButtonGroup bsSize='small' type='radio' bsStyle='primary' name='list_type' defaultValue='full'>
@@ -66,7 +79,7 @@ class MoonSheet extends Component {
               <Button
                 bsSize='small'
                 value='2.2% ME'
-                onClick={() => this.setState({ efficiency: !efficiency })}
+                onClick={this.toggleEfficiency}
                 style={{ width: 72 }}
               >
                 {effStr}
@@ -82,6 +95,7 @@ class MoonSheet extends Component {
               list_type={list_type}
               refinery_type={refinery_type}
               efficiency={efficiency}
+              filter={filterValue}
             />
           </div>
         </div>

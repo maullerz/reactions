@@ -1,0 +1,14 @@
+
+
+.clearIcon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  cursor: pointer;
+
+  &.hidden {
+    display: none;
+  }
+}

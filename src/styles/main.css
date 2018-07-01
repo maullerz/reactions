@@ -213,15 +213,11 @@ a:hover {
   background-color: #ccab84;
 }
 .input-search {
-  color: #b9964d;
+  color: #e4d6ba;
   width: 100%;
   background: transparent;
   border: 0;
   outline: none;
-  border-bottom: 1px solid transparent;
-}
-.input-search:focus {
-  border-bottom: 1px solid #808080;
 }
 .inline {
   display: inline-block;
