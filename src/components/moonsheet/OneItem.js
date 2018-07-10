@@ -9,9 +9,7 @@ const ReprocessRatio = 0.52
 const ScrapmetalSkill = 1.1
 
 
-const getReaction = (name, list) => {
-  return find(list, { name: name })
-}
+const getReaction = (name, list) => find(list, { name: name })
 
 
 const OneItem = (props) => {
@@ -22,10 +20,11 @@ const OneItem = (props) => {
     price_output_type,
     getProfit,
     getProfitFunc,
-    unrefined,
-    refinery_type,
+    isUnref,
+    refineryType,
     efficiency,
     reactions,
+    hundredRuns,
   } = props
   const price_input = prices[price_input_type]
   const price_output = prices[price_output_type]
@@ -43,7 +42,7 @@ const OneItem = (props) => {
       var outputValue = Helper.price(profit)
       // var percColor = profit >= 0 ? "txt-yellow" : "profit-minus"
       // Lifeblood Athanor
-      var reactionProfit = Helper.reactionProfit(profit, isUnref, refinery_type)
+      var reactionProfit = Helper.reactionProfit(profit / (hundredRuns ? 100 : 1), isUnref, refineryType)
       var componentProfit = Helper.price(reactionProfit)
     }
 
@@ -66,7 +65,7 @@ const OneItem = (props) => {
   })
 
   let outputCost = 0
-  if (unrefined) {
+  if (isUnref) {
     const outputs = refinedOutputs[item.id]
     outputs.forEach(item => {
       const outputAmount = Math.trunc(item.quantity * ReprocessRatio * ScrapmetalSkill)
@@ -80,7 +79,7 @@ const OneItem = (props) => {
   const outputValue = Helper.price(profit)
   const percColor = profit >= 0 ? "txt-yellow" : "profit-minus"
   // Lifeblood Athanor
-  const reactionProfit = Helper.reactionProfit(profit, unrefined, refinery_type)
+  const reactionProfit = Helper.reactionProfit(profit / (hundredRuns ? 100 : 1), isUnref, refineryType)
   const outputValueLifeblood = Helper.price(reactionProfit)
 
   return (

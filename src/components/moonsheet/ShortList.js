@@ -5,17 +5,12 @@ import './ShortList.css'
 
 
 const ShortList = (props) => {
-  const {
-    item,
-    getProfit,
-    unrefined,
-    refinery_type,
-  } = props
+  const { item, getProfit, isUnref, refineryType, hundredRuns } = props
   const profit = getProfit(item, props)
   const outputValue = Helper.price(profit)
   const percColor = profit >= 0 ? "txt-yellow b" : "profit-minus"
 
-  const reactionProfit = Helper.reactionProfit(profit, unrefined, refinery_type)
+  const reactionProfit = Helper.reactionProfit(profit / (hundredRuns ? 100 : 1), isUnref, refineryType)
   const outputValueLifeblood = Helper.price(reactionProfit)
 
   // const title = `${item.id}: ${item.name}`

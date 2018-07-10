@@ -16,9 +16,9 @@ let Helper = {
 
   reactionProfit(profit, isUnref, refinery_type) {
     if (refinery_type === 'athanor') {
-      return profit * (isUnref ? 60.0/225.0 : 60.0/113.0) // athanor - 360||180*0.8*0.78
+      return profit * (isUnref ? 60.0/225.0 : 60.0/113.0) // athanor - (360||180)*0.8*0.78
     } else {
-      return profit * (isUnref ? 60.0/169.0 : 60.0/85.0) // tatara - 360||180*0.8*0.78*0.75
+      return profit * (isUnref ? 60.0/169.0 : 60.0/85.0) // tatara - (360||180)*0.8*0.78*0.75
     }
   },
 

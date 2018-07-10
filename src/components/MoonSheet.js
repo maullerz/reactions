@@ -7,22 +7,45 @@ import { getMoonmatPrices } from '../lib/api'
 
 const reactions = require('./reactions.json')
 
+const CACHE_TIME = 3 * 60 * 60 * 1000 // 3 hours
+// const CACHE_TIME = 10 * 24 * 60 * 60 * 1000 // 10 days
+
 
 class MoonSheet extends Component {
 
-  state = {
-    prices: null,
-    list_type: 'full',
-    refinery_type: 'athanor',
-    efficiency: true,
-    hundredRuns: false,
-  }
+  constructor() {
+    super()
 
-  componentDidMount() {
+    let priceStorage = null
+    const timeStr = localStorage.getItem('pricesTime')
+    if (timeStr) {
+      const time = new Date(timeStr)
+      const now = new Date()
+      if (time && (now - time < CACHE_TIME)) {
+        priceStorage = JSON.parse(localStorage.getItem('prices'))
+      }
+    }
+
+    this.state = {
+      prices: priceStorage,
+      listType: localStorage.getItem('listType') || 'full',
+      refineryType: localStorage.getItem('refineryType') || 'athanor',
+      efficiency: localStorage.getItem('efficiency') === 'false' ? false : true,
+      hundredRuns: JSON.parse(localStorage.getItem('hundredRuns')) || false,
+    }
     if (this.state.hundredRuns) {
       this.makeHundredRuns()
     }
+  }
 
+  componentDidMount() {
+    this.makeLowerCaseNames()
+    if (!this.state.prices) {
+      this.updatePrices()
+    }
+  }
+
+  updatePrices() {
     getMoonmatPrices().then(({ data }) => {
       // console.log('data:', data)
       const buy = {}
@@ -43,9 +66,9 @@ class MoonSheet extends Component {
 
       const prices = { sell, buy }
       this.setState({ prices })
+      localStorage.setItem('prices', JSON.stringify({ ...prices }))
+      localStorage.setItem('pricesTime', new Date())
     })
-
-    this.makeLowerCaseNames()
   }
 
   makeSingleRun() {
@@ -69,22 +92,39 @@ class MoonSheet extends Component {
     })
   }
 
-  toggleEfficiency = () => {
-    this.setState({ efficiency: !this.state.efficiency })
-  }
-
   handleFilter = filterValue => {
     this.setState({ filterValue })
+  }
+
+  toggleEfficiency = () => {
+    const { efficiency } = this.state
+    this.setState({ efficiency: !efficiency })
+    localStorage.setItem('efficiency', JSON.stringify(!efficiency))
   }
 
   toggleRuns = () => {
     const { hundredRuns } = this.state
     this.setState({ hundredRuns: !hundredRuns })
+    localStorage.setItem('hundredRuns', JSON.stringify(!hundredRuns))
     hundredRuns ? this.makeSingleRun() : this.makeHundredRuns()
   }
 
+  toggleListType = event => {
+    const listType = event.target.value
+    if (listType) {
+      this.setState({ listType }, localStorage.setItem('listType', listType))
+    }
+  }
+
+  toggleRefineryType = event => {
+    const refineryType = event.target.value
+    if (refineryType) {
+      this.setState({ refineryType }, localStorage.setItem('refineryType', refineryType))
+    }
+  }
+
   render() {
-    const { list_type, refinery_type, efficiency, filterValue, hundredRuns } = this.state
+    const { listType, refineryType, efficiency, filterValue, hundredRuns } = this.state
     const effStr = efficiency ? '2.2% ME' : '0% ME'
     return (
       <div className='sheet-root'>
@@ -95,13 +135,19 @@ class MoonSheet extends Component {
           />
           <div className='col-md-4 t-a_l col-first'>
             <Panel bsClass="control-panel">
-              <ToggleButtonGroup bsSize='small' type='radio' bsStyle='primary' name='list_type' defaultValue='full'>
-                <ToggleButton bsStyle='primary' value='full' onClick={() => this.setState({ list_type: 'full' })}>{'Full'}</ToggleButton>
-                <ToggleButton bsStyle='primary' value='short' onClick={() => this.setState({ list_type: 'short' })}>{'Short'}</ToggleButton>
+              <ToggleButtonGroup
+                bsSize='small' type='radio' bsStyle='primary'
+                name='listType' defaultValue={listType}
+              >
+                <ToggleButton bsStyle='primary' value='full' onClick={this.toggleListType}>{'Full'}</ToggleButton>
+                <ToggleButton bsStyle='primary' value='short' onClick={this.toggleListType}>{'Short'}</ToggleButton>
               </ToggleButtonGroup>
-              <ToggleButtonGroup bsSize='small' type='radio' bsStyle='primary' name='refinery_type' defaultValue='athanor'>
-                <ToggleButton value='athanor' onClick={() => this.setState({ refinery_type: 'athanor' })}>{'Athanor'}</ToggleButton>
-                <ToggleButton value='tatara' onClick={() => this.setState({ refinery_type: 'tatara' })}>{'Tatara'}</ToggleButton>
+              <ToggleButtonGroup
+                bsSize='small' type='radio' bsStyle='primary'
+                name='refineryType' defaultValue={refineryType}
+              >
+                <ToggleButton value='athanor' onClick={this.toggleRefineryType}>{'Athanor'}</ToggleButton>
+                <ToggleButton value='tatara' onClick={this.toggleRefineryType}>{'Tatara'}</ToggleButton>
               </ToggleButtonGroup>
               <Button
                 bsSize='small'
@@ -127,10 +173,11 @@ class MoonSheet extends Component {
               prices={this.state.prices}
               price_input_type='sell'
               price_output_type='sell'
-              list_type={list_type}
-              refinery_type={refinery_type}
+              listType={listType}
+              refineryType={refineryType}
               efficiency={efficiency}
               filter={filterValue}
+              hundredRuns={hundredRuns}
             />
           </div>
         </div>

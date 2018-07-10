@@ -60,7 +60,10 @@ class SheetItems extends React.Component {
   }
 
   getReactionsList(sortedReactionsIds, reactions) {
-    const { filter, price_input_type, price_output_type, prices, list_type, refinery_type, efficiency } = this.props
+    const {
+      filter, price_input_type, price_output_type,
+      prices, listType, refineryType, efficiency, hundredRuns
+    } = this.props
     if (reactions.length === 0) {
       return null
     }
@@ -70,7 +73,7 @@ class SheetItems extends React.Component {
 
       if (filter) {
         const matchedOutput = item.lcName.indexOf(filter) >= 0
-        if (list_type === 'short' && !matchedOutput) {
+        if (listType === 'short' && !matchedOutput) {
           return null
         }
         const matchedInputs = item.inputs.find(input => input.lcName.indexOf(filter) >= 0)
@@ -84,13 +87,13 @@ class SheetItems extends React.Component {
       // Without unref
       // if (!isUnref) return null
 
-      if (list_type === 'full')
+      if (listType === 'full')
         return (
           <OneItem
             key={typeId}
             item={item}
-            refinery_type={refinery_type}
-            unrefined={isUnref}
+            refineryType={refineryType}
+            isUnref={isUnref}
             getProfit={isUnref ? getUnrefProfit : getProfit}
             getProfitFunc={isUnref => isUnref ? getUnrefProfit : getProfit}
             prices={prices}
@@ -98,6 +101,7 @@ class SheetItems extends React.Component {
             price_input_type={price_input_type}
             price_output_type={price_output_type}
             efficiency={efficiency}
+            hundredRuns={hundredRuns}
           />
         )
       else
@@ -105,20 +109,21 @@ class SheetItems extends React.Component {
           <ShortList
             key={typeId}
             item={item}
-            refinery_type={refinery_type}
-            unrefined={isUnref}
+            refineryType={refineryType}
+            isUnref={isUnref}
             getProfit={isUnref ? getUnrefProfit : getProfit}
             prices={prices}
             price_input_type={price_input_type}
             price_output_type={price_output_type}
             efficiency={efficiency}
+            hundredRuns={hundredRuns}
           />
         )
     })
 
 
     // console.log('reactions:', reactions)
-    const sheetTitle = this.renderHeader(list_type)
+    const sheetTitle = this.renderHeader(listType)
 
     return (
       <div className="row">
@@ -142,8 +147,8 @@ class SheetItems extends React.Component {
     )
   }
 
-  renderHeader(list_type) {
-    if (list_type === 'full') {
+  renderHeader(listType) {
+    if (listType === 'full') {
       return (
         <div className="item-output-short header">
           <div>Output & Inputs</div>
