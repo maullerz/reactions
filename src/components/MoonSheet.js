@@ -6,6 +6,7 @@ import FilterPanel from './moonsheet/FilterPanel'
 import { getMoonmatPrices } from '../lib/api'
 
 const reactions = require('./reactions.json')
+const stubPrices = require('./stub-prices.json')
 
 const CACHE_TIME = 3 * 60 * 60 * 1000 // 3 hours
 // const CACHE_TIME = 10 * 24 * 60 * 60 * 1000 // 10 days
@@ -27,7 +28,7 @@ class MoonSheet extends Component {
     }
 
     this.state = {
-      prices: priceStorage,
+      prices: priceStorage || stubPrices,
       listType: localStorage.getItem('listType') || 'full',
       refineryType: localStorage.getItem('refineryType') || 'athanor',
       efficiency: localStorage.getItem('efficiency') === 'false' ? false : true,
@@ -40,14 +41,14 @@ class MoonSheet extends Component {
 
   componentDidMount() {
     this.makeLowerCaseNames()
-    if (!this.state.prices) {
+    const timeStr = localStorage.getItem('pricesTime')
+    if (!this.state.prices || !timeStr) {
       this.updatePrices()
     }
   }
 
   updatePrices() {
     getMoonmatPrices().then(({ data }) => {
-      // console.log('data:', data)
       const buy = {}
       const sell = {}
       data.forEach(item => {
