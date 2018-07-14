@@ -18,13 +18,8 @@ class MoonSheet extends Component {
     super()
 
     let priceStorage = null
-    const timeStr = localStorage.getItem('pricesTime')
-    if (timeStr) {
-      const time = (new Date(timeStr)).getTime()
-      const now = (new Date()).getTime()
-      if (time && (now - time < CACHE_TIME)) {
-        priceStorage = JSON.parse(localStorage.getItem('prices'))
-      }
+    if (!this.isPricesNeedUpdate()) {
+      priceStorage = JSON.parse(localStorage.getItem('prices'))
     }
 
     this.state = {
@@ -41,10 +36,21 @@ class MoonSheet extends Component {
 
   componentDidMount() {
     this.makeLowerCaseNames()
-    const timeStr = localStorage.getItem('pricesTime')
-    if (!this.state.prices || !timeStr) {
+    if (!this.state.prices || this.isPricesNeedUpdate()) {
       this.updatePrices()
     }
+  }
+
+  isPricesNeedUpdate() {
+    const timeStr = localStorage.getItem('pricesTime')
+    if (timeStr) {
+      const time = (new Date(timeStr)).getTime()
+      const now = (new Date()).getTime()
+      if (time && (now - time < CACHE_TIME)) {
+        return false
+      }
+    }
+    return true
   }
 
   updatePrices() {
