@@ -20,8 +20,8 @@ class MoonSheet extends Component {
     let priceStorage = null
     const timeStr = localStorage.getItem('pricesTime')
     if (timeStr) {
-      const time = new Date(timeStr)
-      const now = new Date()
+      const time = (new Date(timeStr)).getTime()
+      const now = (new Date()).getTime()
       if (time && (now - time < CACHE_TIME)) {
         priceStorage = JSON.parse(localStorage.getItem('prices'))
       }
