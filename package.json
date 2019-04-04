@@ -2,6 +2,8 @@
   "name": "reactions",
   "version": "1.0.0",
   "private": false,
+  "author": "maullerz",
+  "license": "MIT",
   "homepage": "https://maullerz.github.io/reactions",
   "dependencies": {
     "axios": "^0.18.0",
