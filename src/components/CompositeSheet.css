@@ -1,0 +1,28 @@
+.compositeItem {
+  display: flex;
+  color: white;
+}
+
+.ci-root {
+  /*margin-left: 100px;*/
+}
+
+.ci-inputs {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ci-moonmat-item {
+  display: flex;
+}
+
+.ci-moonmat-item > span:not(:first-child) {
+  margin-left: 10px;
+}
+
+.ci-moonmat-price {
+  color: green;
+  font-weight: 600;
+}

@@ -9,43 +9,50 @@ import ShortList from './ShortList'
 
 const ReprocessRatio = 0.50
 const ScrapmetalSkill = 1.1
+const ApproximateFuelCost = 90000
 
 const getProfit = (item, props) => {
-  const { price_input_type, price_output_type, prices, efficiency } = props
+  const { price_input_type, price_output_type, prices, efficiency, includeFuel, hundredRuns } = props
   let inputAmount = 0
   if (!item.inputs) {
     // debugger
     console.error('error item:', item)
   }
   const eff = efficiency ? 0.978 : 1
+  const runs = hundredRuns ? 100 : 1
   item.inputs.forEach((v, i) => {
     inputAmount += Math.ceil((v.quantity * prices[price_input_type][v.id] * 100 * eff) / 100)
   })
   let amount = item.quantity * prices[price_output_type][item.id]
-  return amount - inputAmount
+  const fuelCost = includeFuel ? ApproximateFuelCost : 0
+  const profit = amount - inputAmount
+  return profit - (fuelCost * runs)
 }
 
 const getUnrefProfit = (item, props) => {
-  const { price_input_type, price_output_type, prices, efficiency } = props
+  const { price_input_type, price_output_type, prices, efficiency, includeFuel, hundredRuns } = props
   let inputAmount = 0
   const eff = efficiency ? 0.978 : 1
+  const runs = hundredRuns ? 100 : 1
   item.inputs.forEach(v => {
     inputAmount += Math.ceil((v.quantity * prices[price_input_type][v.id] * 100 * eff) / 100)
   })
   let outputAmount = 0
   const outputs = refinedOutputs[item.id]
-  outputs.forEach(item => {
-    const amount = Math.trunc(item.quantity * ReprocessRatio * ScrapmetalSkill)
-    outputAmount += prices[price_output_type][item.typeId] * amount
+  outputs.forEach(refOutputItem => {
+    const amount = Math.trunc(runs * refOutputItem.quantity * ReprocessRatio * ScrapmetalSkill)
+    outputAmount += prices[price_output_type][refOutputItem.typeId] * amount
   })
-  return outputAmount - inputAmount
+  const fuelCost = includeFuel ? ApproximateFuelCost : 0
+  const profit = outputAmount - inputAmount
+  return profit - (fuelCost * runs)
 }
 
 const sortCalcFunc = (typeId, reactions, props) => {
   const item = reactions[typeId]
   const isUnref = startsWith(item.name, 'Unref')
   const profit = isUnref ? getUnrefProfit(item, props) : getProfit(item, props)
-  return Helper.reactionProfit(profit, isUnref)
+  return Helper.reactionProfit(profit, isUnref, props.refinery_type)
 }
 
 
@@ -55,14 +62,22 @@ class SheetItems extends React.Component {
     return Object.keys(reactions).sort((a, b) => {
       const diffA = sortCalcFunc(a, reactions, this.props)
       const diffB = sortCalcFunc(b, reactions, this.props)
-      return diffB - diffA
+      // console.log(diffB - diffA, diffB, diffA)
+      // return diffB - diffA
+      if (diffB > diffA) {
+        return 1
+      } else if (diffB < diffA) {
+        return -1
+      }
+      return 0
     })
   }
 
   getReactionsList(sortedReactionsIds, reactions) {
     const {
       filter, price_input_type, price_output_type,
-      prices, listType, refineryType, efficiency, hundredRuns
+      prices, listType, refineryType, efficiency,
+      hundredRuns, includeFuel,
     } = this.props
     if (reactions.length === 0) {
       return null
@@ -102,6 +117,7 @@ class SheetItems extends React.Component {
             price_output_type={price_output_type}
             efficiency={efficiency}
             hundredRuns={hundredRuns}
+            includeFuel={includeFuel}
           />
         )
       else
@@ -117,6 +133,7 @@ class SheetItems extends React.Component {
             price_output_type={price_output_type}
             efficiency={efficiency}
             hundredRuns={hundredRuns}
+            includeFuel={includeFuel}
           />
         )
     })

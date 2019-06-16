@@ -11,7 +11,10 @@ let Helper = {
   },
 
   price(n) {
-    return numeral(n).format("0,0.00a");
+    if (n > 1000000) {
+      return numeral(n).format("0,0.000a");
+    }
+    return numeral(n).format("0,0.0a");
   },
 
   reactionProfit(profit, isUnref, refinery_type) {

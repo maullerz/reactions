@@ -28,7 +28,7 @@ const ShortList = (props) => {
           {title}
         </div>
         <div className={percColor}>
-          {Helper.price(outputValue)}
+          {outputValue}
         </div>
         <div className={percColor}>
           {outputValueLifeblood}
