@@ -1,12 +1,19 @@
 {
-  "main.css": "static/css/main.ea8a8dd5.css",
-  "main.css.map": "static/css/main.ea8a8dd5.css.map",
-  "main.js": "static/js/main.3755e88c.js",
-  "main.js.map": "static/js/main.3755e88c.js.map",
-  "static/media/bg.jpg": "static/media/bg.90992508.jpg",
-  "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
-  "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
-  "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
-  "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  "files": {
+    "main.css": "/reactions/static/css/main.da05152b.chunk.css",
+    "main.js": "/reactions/static/js/main.18d43cd8.chunk.js",
+    "main.js.map": "/reactions/static/js/main.18d43cd8.chunk.js.map",
+    "runtime~main.js": "/reactions/static/js/runtime~main.a8d1aa54.js",
+    "runtime~main.js.map": "/reactions/static/js/runtime~main.a8d1aa54.js.map",
+    "static/css/2.210d5b10.chunk.css": "/reactions/static/css/2.210d5b10.chunk.css",
+    "static/js/2.a96fc51f.chunk.js": "/reactions/static/js/2.a96fc51f.chunk.js",
+    "static/js/2.a96fc51f.chunk.js.map": "/reactions/static/js/2.a96fc51f.chunk.js.map",
+    "index.html": "/reactions/index.html",
+    "precache-manifest.5af2c18e0d222cd5c51f0c46e42918f5.js": "/reactions/precache-manifest.5af2c18e0d222cd5c51f0c46e42918f5.js",
+    "service-worker.js": "/reactions/service-worker.js",
+    "static/css/2.210d5b10.chunk.css.map": "/reactions/static/css/2.210d5b10.chunk.css.map",
+    "static/css/main.da05152b.chunk.css.map": "/reactions/static/css/main.da05152b.chunk.css.map",
+    "static/media/main.css": "/reactions/static/media/bg.90992508.jpg",
+    "static/media/bootstrap.min.css": "/reactions/static/media/glyphicons-halflings-regular.fa277232.woff"
+  }
 }
