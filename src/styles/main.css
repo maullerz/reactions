@@ -480,8 +480,19 @@ textarea {
   }
 }
 
+.btn-default {
+  outline: none !important;
+}
+
 .btn-default:active, .btn-default.active {
-  background-color: #ccc;
-  border-color: #ccc;
-  text-shadow: 0 1px 0 #eee;
+  background-color: #bbb;
+  border-color: #bbb;
+  text-shadow: 0 1px 0 #ccc;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover,
+.btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover {
+  color: #333;
+  background-color: #bbb;
+  border-color: #bbb;
 }
