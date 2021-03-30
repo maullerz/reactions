@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/reactions/static/css/main.da05152b.chunk.css",
-    "main.js": "/reactions/static/js/main.18d43cd8.chunk.js",
-    "main.js.map": "/reactions/static/js/main.18d43cd8.chunk.js.map",
-    "runtime~main.js": "/reactions/static/js/runtime~main.a8d1aa54.js",
-    "runtime~main.js.map": "/reactions/static/js/runtime~main.a8d1aa54.js.map",
-    "static/css/2.210d5b10.chunk.css": "/reactions/static/css/2.210d5b10.chunk.css",
-    "static/js/2.a96fc51f.chunk.js": "/reactions/static/js/2.a96fc51f.chunk.js",
-    "static/js/2.a96fc51f.chunk.js.map": "/reactions/static/js/2.a96fc51f.chunk.js.map",
+    "main.css": "/reactions/static/css/main.ea527c74.chunk.css",
+    "main.js": "/reactions/static/js/main.a0de3399.chunk.js",
+    "main.js.map": "/reactions/static/js/main.a0de3399.chunk.js.map",
+    "runtime-main.js": "/reactions/static/js/runtime-main.84af3478.js",
+    "runtime-main.js.map": "/reactions/static/js/runtime-main.84af3478.js.map",
+    "static/css/2.e140682e.chunk.css": "/reactions/static/css/2.e140682e.chunk.css",
+    "static/js/2.ba40822f.chunk.js": "/reactions/static/js/2.ba40822f.chunk.js",
+    "static/js/2.ba40822f.chunk.js.map": "/reactions/static/js/2.ba40822f.chunk.js.map",
     "index.html": "/reactions/index.html",
-    "precache-manifest.5af2c18e0d222cd5c51f0c46e42918f5.js": "/reactions/precache-manifest.5af2c18e0d222cd5c51f0c46e42918f5.js",
-    "service-worker.js": "/reactions/service-worker.js",
-    "static/css/2.210d5b10.chunk.css.map": "/reactions/static/css/2.210d5b10.chunk.css.map",
-    "static/css/main.da05152b.chunk.css.map": "/reactions/static/css/main.da05152b.chunk.css.map",
-    "static/media/main.css": "/reactions/static/media/bg.90992508.jpg",
-    "static/media/bootstrap.min.css": "/reactions/static/media/glyphicons-halflings-regular.fa277232.woff"
-  }
+    "static/css/2.e140682e.chunk.css.map": "/reactions/static/css/2.e140682e.chunk.css.map",
+    "static/css/main.ea527c74.chunk.css.map": "/reactions/static/css/main.ea527c74.chunk.css.map",
+    "static/js/2.ba40822f.chunk.js.LICENSE.txt": "/reactions/static/js/2.ba40822f.chunk.js.LICENSE.txt",
+    "static/media/main.css": "/reactions/static/media/bg.df1fcf27.jpg",
+    "static/media/bootstrap.min.css": "/reactions/static/media/glyphicons-halflings-regular.be810be3.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84af3478.js",
+    "static/css/2.e140682e.chunk.css",
+    "static/js/2.ba40822f.chunk.js",
+    "static/css/main.ea527c74.chunk.css",
+    "static/js/main.a0de3399.chunk.js"
+  ]
 }
