@@ -29,7 +29,6 @@ class MoonSheet extends Component {
       refineryType: localStorage.getItem('refineryType') || 'athanor',
       efficiency: localStorage.getItem('efficiency') === 'false' ? false : true,
       hundredRuns: JSON.parse(localStorage.getItem('hundredRuns')) || false,
-      includeFuel: JSON.parse(localStorage.getItem('includeFuel')) || false,
     }
     if (this.state.hundredRuns) {
       this.makeHundredRuns()
@@ -111,12 +110,6 @@ class MoonSheet extends Component {
     localStorage.setItem('efficiency', JSON.stringify(!efficiency))
   }
 
-  toggleFuel = () => {
-    const { includeFuel } = this.state
-    this.setState({ includeFuel: !includeFuel })
-    localStorage.setItem('includeFuel', JSON.stringify(!includeFuel))
-  }
-
   toggleRuns = () => {
     const { hundredRuns } = this.state
     this.setState({ hundredRuns: !hundredRuns })
@@ -139,7 +132,7 @@ class MoonSheet extends Component {
   }
 
   render() {
-    const { listType, refineryType, efficiency, filterValue, hundredRuns, includeFuel } = this.state
+    const { listType, refineryType, efficiency, filterValue, hundredRuns } = this.state
     const effStr = efficiency ? '2.2% ME' : '0% ME'
     return (
       <div className='sheet-root'>
@@ -182,14 +175,6 @@ class MoonSheet extends Component {
               >
                 {hundredRuns ? '100runs' : '1 run'}
               </Button>
-              <Button
-                bsSize='small'
-                onClick={this.toggleFuel}
-                style={{ paddingLeft: 4, paddingRight: 4 }}
-                active={includeFuel}
-              >
-                {'Fuel'}
-              </Button>
             </Panel>
           </div>
           <div className='col-md-8 t-a_l col-last'>
@@ -204,7 +189,7 @@ class MoonSheet extends Component {
               efficiency={efficiency}
               filter={filterValue}
               hundredRuns={hundredRuns}
-              includeFuel={includeFuel}
+              includeFuel={false}
             />
           </div>
         </div>

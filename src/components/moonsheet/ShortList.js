@@ -22,8 +22,9 @@ const ShortList = (props) => {
         <div>
           <img
             className="img16 pen"
-            alt={title}
-            src={`https://image.eveonline.com/Type/${item.id}_32.png`}
+            alt='' // {title}
+            //src={`https://image.eveonline.com/Type/${item.id}_32.png`}
+            src={`https://img.evetools.org/sdeimages/types/${item.id}/icon?size=32`}
           />
           {title}
         </div>

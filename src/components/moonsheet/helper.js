@@ -10,7 +10,13 @@ let Helper = {
     return numeral(n).format("0,0");
   },
 
-  price(n) {
+  price(n, fallbackInfo) {
+    if (fallbackInfo) {
+      const cost = this.price(n || fallbackInfo.cost)
+      const singleCost = this.price((n || fallbackInfo.cost) / fallbackInfo.count)
+      return `${cost} (${singleCost})`
+    }
+
     if (n > 1000000) {
       return numeral(n).format("0,0.000a");
     }

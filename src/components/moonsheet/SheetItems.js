@@ -63,13 +63,7 @@ class SheetItems extends React.Component {
       const diffA = sortCalcFunc(a, reactions, this.props)
       const diffB = sortCalcFunc(b, reactions, this.props)
       // console.log(diffB - diffA, diffB, diffA)
-      // return diffB - diffA
-      if (diffB > diffA) {
-        return 1
-      } else if (diffB < diffA) {
-        return -1
-      }
-      return 0
+      return diffB - diffA
     })
   }
 
@@ -85,6 +79,11 @@ class SheetItems extends React.Component {
 
     const resultList = map(sortedReactionsIds, typeId => {
       const item = reactions[typeId]
+
+      // New Reactions
+      // if (typeId < 57490) {
+      //   return null
+      // }
 
       if (filter) {
         const matchedOutput = item.lcName.indexOf(filter) >= 0

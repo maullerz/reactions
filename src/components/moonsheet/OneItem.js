@@ -30,9 +30,11 @@ const OneItem = (props) => {
   const price_output = prices[price_output_type]
   const eff = efficiency ? 0.978 : 1
 
+  let inputItemsSum = 0
   const inputItems = map(item.inputs, (v, i) => {
     const effQuantity = Math.ceil(v.quantity * eff)
-    const amount = effQuantity * price_input[v.id]
+    const inputCost = effQuantity * price_input[v.id]
+    inputItemsSum += inputCost
 
     // components profit
     const reaction = getReaction(v.name, reactions)
@@ -53,12 +55,17 @@ const OneItem = (props) => {
       <div className="row" key={v.name}>
         <div className="col-md-12 col-sm-12 col-xs-12 flex-between">
           <span className="item-title-cell">
-            <img className="img16 pen" alt={v.name} src={`https://image.eveonline.com/Type/${v.id}_32.png`} />
+            {/*<img className="img16 pen" alt={v.name} src={`https://image.eveonline.com/Type/${v.id}_32.png`} />*/}
+            <img
+              className="img16 pen"
+              alt='' // {v.name}
+              src={`https://img.evetools.org/sdeimages/types/${v.id}/icon?size=32`}
+            />
             <span>{title}</span>
           </span>
           <span className="item-cell">{outputValue}</span>
           <span className="item-cell">{componentProfit}</span>
-          <span className="item-cell">{Helper.price(amount)}</span>
+          <span className="item-cell">{Helper.price(inputCost)}</span>
         </div>
       </div>
     )
@@ -71,6 +78,9 @@ const OneItem = (props) => {
       const outputAmount = Math.trunc(item.quantity * ReprocessRatio * ScrapmetalSkill)
       outputCost += (prices[price_output_type][item.typeId] * outputAmount)
     })
+  } else if (!price_output[item.id]) {
+    outputCost = null
+    // console.log('inputItemsSum:', inputItemsSum)
   } else {
     outputCost = price_output[item.id] * item.quantity
   }
@@ -94,12 +104,13 @@ const OneItem = (props) => {
                   <div style={{ width: 'auto' }}>
                     <img
                       className="img16 pen"
-                      alt={item.name}
-                      src={`https://image.eveonline.com/Type/${item.id}_32.png`}
+                      alt='' // {item.name}
+                      //src={`https://image.eveonline.com/Type/${item.id}_32.png`}
+                      src={`https://img.evetools.org/sdeimages/types/${item.id}/icon?size=32`}
                     />
                   </div>
                   <div style={{ width: '100%', textAlign: 'left' }}>
-                    {`${item.name} x ${item.quantity}`}
+                    {`${item.name} x ${item.quantity}`}{/* ${item.id}: */}
                   </div>
                 </div>
                 <div className={percColor}>
@@ -109,7 +120,7 @@ const OneItem = (props) => {
                   {outputValueLifeblood}
                 </div>
                 <div className="txt-normal" style={{ marginRight: 6 }}>
-                  {Helper.price(outputCost)}
+                  {Helper.price(outputCost, { cost: inputItemsSum, count: item.quantity })}
                 </div>
               </div>
             </th>

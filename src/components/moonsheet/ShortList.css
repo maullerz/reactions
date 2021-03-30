@@ -10,12 +10,12 @@
 }
 
 .item-output-short div {
-  width: 25%;
+  width: 20%;
   text-align: right;
 }
 
 .item-output-short div:first-child {
-  width: 50%;
+  width: 40%;
   text-align: left;
 }
 

@@ -1,937 +1,1551 @@
 {
-  "17941": {
+  "46166": {
     "id": 16663,
     "name": "Caesarium Cadmide",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16643,
         "name": "Cadmium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16647,
         "name": "Caesium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17942": {
+  "46167": {
     "id": 16659,
     "name": "Carbon Polymers",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16633,
         "name": "Hydrocarbons",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16636,
         "name": "Silicates",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17943": {
+  "46168": {
     "id": 16660,
     "name": "Ceramic Powder",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16635,
         "name": "Evaporite Deposits",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16636,
         "name": "Silicates",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17944": {
+  "46169": {
     "id": 16655,
     "name": "Crystallite Alloy",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16640,
         "name": "Cobalt",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16643,
         "name": "Cadmium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17945": {
+  "46170": {
     "id": 16668,
     "name": "Dysporite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16646,
         "name": "Mercury",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16650,
         "name": "Dysprosium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17946": {
+  "46171": {
     "id": 16656,
     "name": "Fernite Alloy",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16639,
         "name": "Scandium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16642,
         "name": "Vanadium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17947": {
+  "46172": {
     "id": 16669,
     "name": "Ferrofluid",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16648,
         "name": "Hafnium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16650,
         "name": "Dysprosium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17948": {
+  "46173": {
     "id": 17769,
     "name": "Fluxed Condensates",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16651,
         "name": "Neodymium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16653,
         "name": "Thulium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17949": {
+  "46174": {
     "id": 16665,
     "name": "Hexite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16641,
         "name": "Chromium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16644,
         "name": "Platinum",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17950": {
+  "46175": {
     "id": 16666,
     "name": "Hyperflurite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16642,
         "name": "Vanadium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16652,
         "name": "Promethium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17951": {
+  "46176": {
     "id": 16667,
     "name": "Neo Mercurite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16646,
         "name": "Mercury",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16651,
         "name": "Neodymium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17952": {
+  "46177": {
     "id": 16662,
     "name": "Platinum Technite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16644,
         "name": "Platinum",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16649,
         "name": "Technetium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17953": {
+  "46178": {
     "id": 16657,
     "name": "Rolled Tungsten Alloy",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16637,
         "name": "Tungsten",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16644,
         "name": "Platinum",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17954": {
+  "46179": {
     "id": 16658,
     "name": "Silicon Diborite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16635,
         "name": "Evaporite Deposits",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16636,
         "name": "Silicates",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17955": {
+  "46180": {
     "id": 16664,
     "name": "Solerium",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16641,
         "name": "Chromium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16647,
         "name": "Caesium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17956": {
+  "46181": {
     "id": 16661,
     "name": "Sulfuric Acid",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16634,
         "name": "Atmospheric Gases",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16635,
         "name": "Evaporite Deposits",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17957": {
+  "46182": {
     "id": 16654,
     "name": "Titanium Chromide",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16638,
         "name": "Titanium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16641,
         "name": "Chromium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17958": {
+  "46183": {
     "id": 17959,
     "name": "Vanadium Hafnite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16642,
         "name": "Vanadium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16648,
         "name": "Hafnium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17961": {
+  "46184": {
     "id": 17960,
     "name": "Prometium",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16643,
         "name": "Cadmium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16652,
         "name": "Promethium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "17962": {
-    "id": 16671,
-    "name": "Titanium Carbide",
-    "quantity": 10000,
-    "inputs": [
-      {
-        "id": 16654,
-        "name": "Titanium Chromide",
-        "quantity": 100
-      },
-      {
-        "id": 16658,
-        "name": "Silicon Diborite",
-        "quantity": 100
-      }
-    ]
-  },
-  "17963": {
-    "id": 16670,
-    "name": "Crystalline Carbonide",
-    "quantity": 10000,
-    "inputs": [
-      {
-        "id": 16655,
-        "name": "Crystallite Alloy",
-        "quantity": 100
-      },
-      {
-        "id": 16659,
-        "name": "Carbon Polymers",
-        "quantity": 100
-      }
-    ]
-  },
-  "17964": {
-    "id": 16673,
-    "name": "Fernite Carbide",
-    "quantity": 10000,
-    "inputs": [
-      {
-        "id": 16656,
-        "name": "Fernite Alloy",
-        "quantity": 100
-      },
-      {
-        "id": 16660,
-        "name": "Ceramic Powder",
-        "quantity": 100
-      }
-    ]
-  },
-  "17965": {
-    "id": 16672,
-    "name": "Tungsten Carbide",
-    "quantity": 10000,
-    "inputs": [
-      {
-        "id": 16657,
-        "name": "Rolled Tungsten Alloy",
-        "quantity": 100
-      },
-      {
-        "id": 16661,
-        "name": "Sulfuric Acid",
-        "quantity": 100
-      }
-    ]
-  },
-  "17966": {
-    "id": 16678,
-    "name": "Sylramic Fibers",
-    "quantity": 6000,
-    "inputs": [
-      {
-        "id": 16660,
-        "name": "Ceramic Powder",
-        "quantity": 100
-      },
-      {
-        "id": 16665,
-        "name": "Hexite",
-        "quantity": 100
-      }
-    ]
-  },
-  "17967": {
-    "id": 16679,
-    "name": "Fullerides",
-    "quantity": 3000,
-    "inputs": [
-      {
-        "id": 16659,
-        "name": "Carbon Polymers",
-        "quantity": 100
-      },
-      {
-        "id": 16662,
-        "name": "Platinum Technite",
-        "quantity": 100
-      }
-    ]
-  },
-  "17968": {
-    "id": 16680,
-    "name": "Phenolic Composites",
-    "quantity": 2200,
-    "inputs": [
-      {
-        "id": 16658,
-        "name": "Silicon Diborite",
-        "quantity": 100
-      },
-      {
-        "id": 16663,
-        "name": "Caesarium Cadmide",
-        "quantity": 100
-      },
-      {
-        "id": 17959,
-        "name": "Vanadium Hafnite",
-        "quantity": 100
-      }
-    ]
-  },
-  "17969": {
-    "id": 16681,
-    "name": "Nanotransistors",
-    "quantity": 1500,
-    "inputs": [
-      {
-        "id": 16661,
-        "name": "Sulfuric Acid",
-        "quantity": 100
-      },
-      {
-        "id": 16662,
-        "name": "Platinum Technite",
-        "quantity": 100
-      },
-      {
-        "id": 16667,
-        "name": "Neo Mercurite",
-        "quantity": 100
-      }
-    ]
-  },
-  "17970": {
-    "id": 16682,
-    "name": "Hypersynaptic Fibers",
-    "quantity": 750,
-    "inputs": [
-      {
-        "id": 16664,
-        "name": "Solerium",
-        "quantity": 100
-      },
-      {
-        "id": 16668,
-        "name": "Dysporite",
-        "quantity": 100
-      },
-      {
-        "id": 17959,
-        "name": "Vanadium Hafnite",
-        "quantity": 100
-      }
-    ]
-  },
-  "17971": {
-    "id": 16683,
-    "name": "Ferrogel",
-    "quantity": 400,
-    "inputs": [
-      {
-        "id": 16665,
-        "name": "Hexite",
-        "quantity": 100
-      },
-      {
-        "id": 16666,
-        "name": "Hyperflurite",
-        "quantity": 100
-      },
-      {
-        "id": 16669,
-        "name": "Ferrofluid",
-        "quantity": 100
-      },
-      {
-        "id": 17960,
-        "name": "Prometium",
-        "quantity": 100
-      }
-    ]
-  },
-  "17972": {
-    "id": 17317,
-    "name": "Fermionic Condensates",
+  "46185": {
+    "id": 33336,
+    "name": "Thulium Hafnite",
     "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
       {
-        "id": 16663,
-        "name": "Caesarium Cadmide",
-        "quantity": 100
-      },
-      {
-        "id": 16668,
-        "name": "Dysporite",
-        "quantity": 100
-      },
-      {
-        "id": 17769,
-        "name": "Fluxed Condensates",
-        "quantity": 100
-      },
-      {
-        "id": 17960,
-        "name": "Prometium",
-        "quantity": 100
-      }
-    ]
-  },
-  "29640": {
-    "id": 29664,
-    "name": "Unrefined Hyperflurite",
-    "quantity": 1,
-    "inputs": [
-      {
-        "id": 16641,
-        "name": "Chromium",
-        "quantity": 100
-      },
-      {
-        "id": 16642,
-        "name": "Vanadium",
-        "quantity": 100
-      }
-    ]
-  },
-  "29641": {
-    "id": 29663,
-    "name": "Unrefined Ferrofluid",
-    "quantity": 1,
-    "inputs": [
-      {
-        "id": 16643,
-        "name": "Cadmium",
-        "quantity": 100
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16648,
         "name": "Hafnium",
-        "quantity": 100
-      }
-    ]
-  },
-  "29642": {
-    "id": 29662,
-    "name": "Unrefined Prometium",
-    "quantity": 1,
-    "inputs": [
-      {
-        "id": 16641,
-        "name": "Chromium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
-        "id": 16643,
-        "name": "Cadmium",
-        "quantity": 100
+        "id": 16653,
+        "name": "Thulium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "29643": {
-    "id": 29661,
-    "name": "Unrefined Neo Mercurite",
-    "quantity": 1,
+  "46186": {
+    "id": 33337,
+    "name": "Promethium Mercurite",
+    "quantity": 200,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
       {
-        "id": 16644,
-        "name": "Platinum",
-        "quantity": 100
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16646,
         "name": "Mercury",
-        "quantity": 100
-      }
-    ]
-  },
-  "29644": {
-    "id": 29660,
-    "name": "Unrefined Dysporite",
-    "quantity": 1,
-    "inputs": [
-      {
-        "id": 16643,
-        "name": "Cadmium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
-        "id": 16646,
-        "name": "Mercury",
-        "quantity": 100
+        "id": 16652,
+        "name": "Promethium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "29645": {
-    "id": 29659,
-    "name": "Unrefined Fluxed Condensates",
-    "quantity": 1,
-    "inputs": [
-      {
-        "id": 16642,
-        "name": "Vanadium",
-        "quantity": 100
-      },
-      {
-        "id": 16644,
-        "name": "Platinum",
-        "quantity": 100
-      }
-    ]
-  },
-  "32830": {
+  "46187": {
     "id": 32821,
     "name": "Unrefined Vanadium Hafnite",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16638,
         "name": "Titanium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16642,
         "name": "Vanadium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32831": {
+  "46188": {
     "id": 32822,
     "name": "Unrefined Platinum Technite",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16640,
         "name": "Cobalt",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16644,
         "name": "Platinum",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32832": {
+  "46189": {
     "id": 32823,
     "name": "Unrefined Solerium",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16639,
         "name": "Scandium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16641,
         "name": "Chromium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32833": {
+  "46190": {
     "id": 32824,
     "name": "Unrefined Caesarium Cadmide",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16639,
         "name": "Scandium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16643,
         "name": "Cadmium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32834": {
+  "46191": {
     "id": 32825,
     "name": "Unrefined Hexite",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
       {
-        "id": 16635,
-        "name": "Evaporite Deposits",
-        "quantity": 100
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16634,
         "name": "Atmospheric Gases",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32835": {
+  "46192": {
     "id": 32826,
     "name": "Unrefined Rolled Tungsten Alloy",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16634,
         "name": "Atmospheric Gases",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16637,
         "name": "Tungsten",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32836": {
+  "46193": {
     "id": 32827,
     "name": "Unrefined Titanium Chromide",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16635,
         "name": "Evaporite Deposits",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16638,
         "name": "Titanium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32837": {
+  "46194": {
     "id": 32828,
     "name": "Unrefined Fernite Alloy",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16633,
         "name": "Hydrocarbons",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16639,
         "name": "Scandium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "32838": {
+  "46195": {
     "id": 32829,
     "name": "Unrefined Crystallite Alloy",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
       {
         "id": 16636,
         "name": "Silicates",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       },
       {
         "id": 16640,
         "name": "Cobalt",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "33340": {
-    "id": 33336,
-    "name": "Thulium Hafnite",
-    "quantity": 200,
-    "inputs": [
-      {
-        "id": 16653,
-        "name": "Thulium",
-        "quantity": 100
-      },
-      {
-        "id": 16648,
-        "name": "Hafnium",
-        "quantity": 100
-      }
-    ]
-  },
-  "33341": {
-    "id": 33337,
-    "name": "Promethium Mercurite",
-    "quantity": 200,
-    "inputs": [
-      {
-        "id": 16652,
-        "name": "Promethium",
-        "quantity": 100
-      },
-      {
-        "id": 16646,
-        "name": "Mercury",
-        "quantity": 100
-      }
-    ]
-  },
-  "33342": {
-    "id": 33339,
-    "name": "Unrefined Thulium Hafnite",
+  "46196": {
+    "id": 29664,
+    "name": "Unrefined Hyperflurite",
     "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
       {
-        "id": 16642,
-        "name": "Vanadium",
-        "quantity": 100
-      },
-      {
-        "id": 16648,
-        "name": "Hafnium",
-        "quantity": 100
-      }
-    ]
-  },
-  "33343": {
-    "id": 33338,
-    "name": "Unrefined Promethium Mercurite",
-    "quantity": 1,
-    "inputs": [
-      {
-        "id": 16646,
-        "name": "Mercury",
-        "quantity": 100
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16641,
         "name": "Chromium",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   },
-  "33363": {
-    "id": 33362,
-    "name": "Nonlinear Metamaterials",
-    "quantity": 300,
+  "46197": {
+    "id": 29663,
+    "name": "Unrefined Ferrofluid",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
     "inputs": [
       {
-        "id": 16669,
-        "name": "Ferrofluid",
-        "quantity": 100
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46198": {
+    "id": 29662,
+    "name": "Unrefined Prometium",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46199": {
+    "id": 29661,
+    "name": "Unrefined Neo Mercurite",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46200": {
+    "id": 29660,
+    "name": "Unrefined Dysporite",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16643,
+        "name": "Cadmium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46201": {
+    "id": 29659,
+    "name": "Unrefined Fluxed Condensates",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16644,
+        "name": "Platinum",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46202": {
+    "id": 33339,
+    "name": "Unrefined Thulium Hafnite",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16642,
+        "name": "Vanadium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16648,
+        "name": "Hafnium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46203": {
+    "id": 33338,
+    "name": "Unrefined Promethium Mercurite",
+    "quantity": 1,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16641,
+        "name": "Chromium",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16646,
+        "name": "Mercury",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "46204": {
+    "id": 16671,
+    "name": "Titanium Carbide",
+    "quantity": 10000,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16654,
         "name": "Titanium Chromide",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16658,
+        "name": "Silicon Diborite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
       }
     ]
   },
-  "33364": {
-    "id": 33359,
-    "name": "Photonic Metamaterials",
-    "quantity": 300,
+  "46205": {
+    "id": 16670,
+    "name": "Crystalline Carbonide",
+    "quantity": 10000,
+    "groupName": "429: Composite",
     "inputs": [
       {
-        "id": 33336,
-        "name": "Thulium Hafnite",
-        "quantity": 100
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16655,
         "name": "Crystallite Alloy",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16659,
+        "name": "Carbon Polymers",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
       }
     ]
   },
-  "33365": {
-    "id": 33361,
-    "name": "Plasmonic Metamaterials",
-    "quantity": 300,
+  "46206": {
+    "id": 16673,
+    "name": "Fernite Carbide",
+    "quantity": 10000,
+    "groupName": "429: Composite",
     "inputs": [
       {
-        "id": 16667,
-        "name": "Neo Mercurite",
-        "quantity": 100
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16656,
         "name": "Fernite Alloy",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16660,
+        "name": "Ceramic Powder",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
       }
     ]
   },
-  "33366": {
-    "id": 33360,
-    "name": "Terahertz Metamaterials",
-    "quantity": 300,
+  "46207": {
+    "id": 16672,
+    "name": "Tungsten Carbide",
+    "quantity": 10000,
+    "groupName": "429: Composite",
     "inputs": [
       {
-        "id": 33337,
-        "name": "Promethium Mercurite",
-        "quantity": 100
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
       },
       {
         "id": 16657,
         "name": "Rolled Tungsten Alloy",
-        "quantity": 100
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16661,
+        "name": "Sulfuric Acid",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46208": {
+    "id": 16678,
+    "name": "Sylramic Fibers",
+    "quantity": 6000,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16660,
+        "name": "Ceramic Powder",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16665,
+        "name": "Hexite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46209": {
+    "id": 16679,
+    "name": "Fullerides",
+    "quantity": 3000,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16659,
+        "name": "Carbon Polymers",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16662,
+        "name": "Platinum Technite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46210": {
+    "id": 16680,
+    "name": "Phenolic Composites",
+    "quantity": 2200,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16658,
+        "name": "Silicon Diborite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16663,
+        "name": "Caesarium Cadmide",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 17959,
+        "name": "Vanadium Hafnite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46211": {
+    "id": 16681,
+    "name": "Nanotransistors",
+    "quantity": 1500,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16661,
+        "name": "Sulfuric Acid",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16662,
+        "name": "Platinum Technite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16667,
+        "name": "Neo Mercurite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46212": {
+    "id": 16682,
+    "name": "Hypersynaptic Fibers",
+    "quantity": 750,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16664,
+        "name": "Solerium",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16668,
+        "name": "Dysporite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 17959,
+        "name": "Vanadium Hafnite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46213": {
+    "id": 16683,
+    "name": "Ferrogel",
+    "quantity": 400,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16665,
+        "name": "Hexite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16666,
+        "name": "Hyperflurite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16669,
+        "name": "Ferrofluid",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 17960,
+        "name": "Prometium",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46214": {
+    "id": 17317,
+    "name": "Fermionic Condensates",
+    "quantity": 200,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16663,
+        "name": "Caesarium Cadmide",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16668,
+        "name": "Dysporite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 17769,
+        "name": "Fluxed Condensates",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 17960,
+        "name": "Prometium",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46215": {
+    "id": 33361,
+    "name": "Plasmonic Metamaterials",
+    "quantity": 300,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16656,
+        "name": "Fernite Alloy",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16667,
+        "name": "Neo Mercurite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46216": {
+    "id": 33360,
+    "name": "Terahertz Metamaterials",
+    "quantity": 300,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4247,
+        "name": "Helium Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16657,
+        "name": "Rolled Tungsten Alloy",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 33337,
+        "name": "Promethium Mercurite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46217": {
+    "id": 33359,
+    "name": "Photonic Metamaterials",
+    "quantity": 300,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16655,
+        "name": "Crystallite Alloy",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 33336,
+        "name": "Thulium Hafnite",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "46218": {
+    "id": 33362,
+    "name": "Nonlinear Metamaterials",
+    "quantity": 300,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 4051,
+        "name": "Nitrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16654,
+        "name": "Titanium Chromide",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16669,
+        "name": "Ferrofluid",
+        "quantity": 100,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "57490": {
+    "id": 57453,
+    "name": "Carbon Fiber",
+    "quantity": 200,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4246,
+        "name": "Hydrogen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16633,
+        "name": "Hydrocarbons",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16635,
+        "name": "Evaporite Deposits",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "57491": {
+    "id": 57454,
+    "name": "Oxy-Organic Solvents",
+    "quantity": 10,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16633,
+        "name": "Hydrocarbons",
+        "quantity": 2000,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16634,
+        "name": "Atmospheric Gases",
+        "quantity": 2000,
+        "groupName": "427: Moon Materials"
+      }
+    ]
+  },
+  "57492": {
+    "id": 57456,
+    "name": "Pressurized Oxidizers",
+    "quantity": 200,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 16659,
+        "name": "Carbon Polymers",
+        "quantity": 200,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 16661,
+        "name": "Sulfuric Acid",
+        "quantity": 200,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 57454,
+        "name": "Oxy-Organic Solvents",
+        "quantity": 1,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "57493": {
+    "id": 57457,
+    "name": "Reinforced Carbon Fiber",
+    "quantity": 200,
+    "groupName": "429: Composite",
+    "inputs": [
+      {
+        "id": 57453,
+        "name": "Carbon Fiber",
+        "quantity": 200,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 57454,
+        "name": "Oxy-Organic Solvents",
+        "quantity": 1,
+        "groupName": "428: Intermediate Materials"
+      },
+      {
+        "id": 57455,
+        "name": "Thermosetting Polymer",
+        "quantity": 200,
+        "groupName": "428: Intermediate Materials"
+      }
+    ]
+  },
+  "57494": {
+    "id": 57455,
+    "name": "Thermosetting Polymer",
+    "quantity": 200,
+    "groupName": "428: Intermediate Materials",
+    "inputs": [
+      {
+        "id": 4312,
+        "name": "Oxygen Fuel Block",
+        "quantity": 5,
+        "groupName": "1136: Fuel Block"
+      },
+      {
+        "id": 16634,
+        "name": "Atmospheric Gases",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
+      },
+      {
+        "id": 16636,
+        "name": "Silicates",
+        "quantity": 100,
+        "groupName": "427: Moon Materials"
       }
     ]
   }

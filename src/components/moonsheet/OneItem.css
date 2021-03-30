@@ -11,7 +11,7 @@
 }
 
 .item-output div:first-child {
-  width: 50%;
+  width: 40%;
   text-align: left;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .item-title-cell {
-  width: 50%;
+  width: 40%;
   text-align: left;
   display: flex;
   align-items: center;
