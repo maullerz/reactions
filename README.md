@@ -1,3 +1,7 @@
+This was a useful utility some time ago, if I need it again I will create a fresh project in another repository
+
+======
+
 EVE Online - Composite reactions chart calculator
 
 Firstly implemented on https://eve-prod.xyz/moon/sheet (https://github.com/mazahell/eve-react)
