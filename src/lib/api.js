@@ -4,7 +4,8 @@ import axios from 'axios'
 // const esiUrl = 'https://esi.tech.ccp.is'
 // const crestUrl = 'https://crest-tq.eveonline.com'
 // const marketUrl = 'https://api.evemarketer.com/ec/marketstat/json?regionlimit=10000002&typeid=' // The Forge
-const marketUrl = 'https://api.evemarketer.com/ec/marketstat/json?usesystem=30000142&typeid=' // Jita
+// const marketUrl = 'https://api.evemarketer.com/ec/marketstat/json?usesystem=30000142&typeid=' // Jita
+const marketUrl = 'https://market.fuzzwork.co.uk/aggregates/?region=10000002&types='
 
 const MOONMAT_ITEMS = [
   16633,16634,16635,16636,16637,16638,16639,16640,16641,16642,16643,16644,16646,16647,16648,
@@ -15,13 +16,31 @@ const MOONMAT_ITEMS = [
   4051, // Nitrogen Fuel Block
   4246, // Hydrogen Fuel Block
   4247, // Helium Fuel Block
+  57453, // Carbon Fiber
+  57454, // Oxy-Organic Solvents
+  57456, // Pressurized Oxidizers
+  57457, // Reinforced Carbon Fiber
+  57455, // Thermosetting Polymer
 ]
 const ITEMS = MOONMAT_ITEMS.join(',')
 
+const parseFuzzworkData = ({ data }) => {
+  const itemsPrices = {}
+  Object.keys(data).forEach(typeID => {
+    const item = data[typeID]
+    itemsPrices[typeID] = {
+      buy: item.buy.percentile,
+      buyFivePerc: item.buy.percentile,
+      sell: item.sell.percentile,
+      sellFivePerc: item.sell.percentile,
+    }
+  })
+  return { itemsPrices }
+}
 
 export const getMoonmatPrices = () => {
   return axios.get(
     marketUrl + ITEMS,
-    { headers: { 'Access-Control-Allow-Origin': '*' } },
-  )
+    // { headers: { 'Access-Control-Allow-Origin': '*' } },
+  )//.then(parseFuzzworkData)
 }
